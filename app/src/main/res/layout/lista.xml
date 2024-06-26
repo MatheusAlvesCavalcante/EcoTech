@@ -6,25 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".ListaEcoPontos">
 
+    <!-- Ponto de Coleta 1 -->
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/header_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTint="#FDF6FE"
-        android:text="Separamos os Ecopontos mais próximos para você :) "
+        android:layout_marginTop="40dp"
+        android:text="@string/header_text"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="#638B2C"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="100dp"
-        android:layout_height="230dp"
-        app:srcCompat="@drawable/local3"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="143dp" />
+    <LinearLayout
+        android:id="@+id/collection_point_1"
+        android:layout_width="377dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/background_item"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_text">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:src="@drawable/local" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/neighborhood"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_of_collection"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_details"
+            android:textColor="#1E91ED"
+            android:textSize="14sp"
+            app:iconTint="#20F7FAF7" />
+
+    </LinearLayout>
+
+    <!-- Repita o bloco acima para outros pontos de coleta -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

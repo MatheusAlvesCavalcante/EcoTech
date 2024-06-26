@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">EcoTech</string>
+    <string name="header_text">Separamos os EcoPontos mais próximos para você :)</string>
+
+    <string name="point_of_collection">Ponto de Coleta Alphaville</string>
+    <string name="neighborhood">Bairro: Alphaville</string>
+    <string name="view_details">Ver detalhes</string>
+
+    <string name="point_of_collection_2">Ponto de Coleta Vila Cretti </string>
+    <string name="neighborhood_2">Bairro: Vila Cretti </string>
+    <string name="view_details">Ver detalhes</string>
+
+    <string name="point_of_collection_3">Ponto de Coleta Vila Cretti </string>
+    <string name="neighborhood_3">Bairro: Vila Cretti </string>
+    <string name="view_details">Ver detalhes</string>
+
+    <string name="point_of_collection_4">Ponto de Coleta Vila Cretti </string>
+    <string name="neighborhood_4">Bairro: Vila Cretti </string>
+    <string name="view_details">Ver detalhes</string>
+
+
 </resources>
