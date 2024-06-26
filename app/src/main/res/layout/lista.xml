@@ -8,31 +8,16 @@
 
     <!-- Ponto de Coleta 1 -->
 
-    <TextView
-        android:id="@+id/header_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/header_text"
-        android:textAlignment="center"
-        android:textColor="#638B2C"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/collection_point_1"
         android:layout_width="377dp"
         android:layout_height="92dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="484dp"
         android:background="@drawable/background_item"
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_text">
 
@@ -64,15 +49,243 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/view_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/view_details"
             android:textColor="#1E91ED"
             android:textSize="14sp"
+            android:background="invisible"
+            app:iconTint="#20F7FAF7"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/collection_point_2"
+        android:layout_width="377dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/background_item"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_text">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:src="@drawable/local1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/neighborhood_2"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_of_collection_2"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/view_details2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_details2"
+            android:textColor="#1E91ED"
+            android:textSize="14sp"
+            android:background="invisible"
             app:iconTint="#20F7FAF7" />
 
     </LinearLayout>
 
-    <!-- Repita o bloco acima para outros pontos de coleta -->
+
+
+    <LinearLayout
+        android:id="@+id/collection_point_3"
+        android:layout_width="377dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/background_item"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_text">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:src="@drawable/local3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/neighborhood_3"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_of_collection_3"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/view_details3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_details3"
+            android:textColor="#1E91ED"
+            android:textSize="14sp"
+            android:background="invisible"
+            app:iconTint="#20F7FAF7" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/collection_point_4"
+        android:layout_width="377dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/background_item"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_text">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:src="@drawable/local4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/neighborhood_4"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_of_collection_4"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/view_details4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_details4"
+            android:textColor="#1E91ED"
+            android:textSize="14sp"
+            android:background="invisible"
+            app:iconTint="#20F7FAF7" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/header_text"
+        android:textAlignment="center"
+        android:textColor="#638B2C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/collection_point_5"
+        android:layout_width="377dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/background_item"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_text">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:src="@drawable/local" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/neighborhood_5"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_of_collection_5"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/view_details5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_details5"
+            android:textColor="#1E91ED"
+            android:textSize="14sp"
+            android:background="invisible"
+            app:iconTint="#20F7FAF7" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,15 +8,20 @@
 
     <string name="point_of_collection_2">Ponto de Coleta Vila Cretti </string>
     <string name="neighborhood_2">Bairro: Vila Cretti </string>
-    <string name="view_details">Ver detalhes</string>
+    <string name="view_details2">Ver detalhes</string>
 
-    <string name="point_of_collection_3">Ponto de Coleta Vila Cretti </string>
-    <string name="neighborhood_3">Bairro: Vila Cretti </string>
-    <string name="view_details">Ver detalhes</string>
+    <string name="point_of_collection_3">Ponto de Coleta Amador Bueno </string>
+    <string name="neighborhood_3">Bairro: Amador Bueno </string>
+    <string name="view_details3">Ver detalhes</string>
 
-    <string name="point_of_collection_4">Ponto de Coleta Vila Cretti </string>
-    <string name="neighborhood_4">Bairro: Vila Cretti </string>
-    <string name="view_details">Ver detalhes</string>
+    <string name="point_of_collection_4">Ponto de Coleta Jardim Alvorada </string>
+    <string name="neighborhood_4">Bairro: Jardim Alvorada </string>
+    <string name="view_details4">Ver detalhes</string>
+
+    <string name="point_of_collection_5">Ponto de Coleta Jardim das Flores </string>
+    <string name="neighborhood_5">Bairro: Jardim das Flores </string>
+    <string name="view_details5">Ver detalhes</string>
+
 
 
 </resources>

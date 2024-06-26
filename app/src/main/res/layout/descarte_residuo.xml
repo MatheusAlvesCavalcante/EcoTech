@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Back Button -->
+    <!-- Certifique-se de ter esse recurso drawable -->
+    android:contentDescription="@string/back_button" />
+
+    <!-- Title -->
+
+    <!-- Small Waste Button -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Qual categoria de resíduo você deseja descartar?"
+        android:textColor="#689F38"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/smallWasteButton"
+        android:layout_width="291dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E0E0E0"
+        android:text="Resíduos de pequeno porte"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Medium Waste Button -->
+    <Button
+        android:id="@+id/mediumWasteButton"
+        android:layout_width="290dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#8CA5CA"
+        android:text="Resíduos de médio porte"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Large Waste Button -->
+    <Button
+        android:id="@+id/largeWasteButton"
+        android:layout_width="289dp"
+        android:layout_height="95dp"
+        android:backgroundTint="#9FA8DA"
+        android:text="Resíduos de grande porte"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
