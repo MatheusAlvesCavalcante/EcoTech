@@ -32,9 +32,9 @@
         android:layout_width="291dp"
         android:layout_height="106dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#E0E0E0"
+        android:backgroundTint="#94BC99"
         android:text="Resíduos de pequeno porte"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <!-- Medium Waste Button -->
@@ -43,9 +43,9 @@
         android:layout_width="290dp"
         android:layout_height="97dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#8CA5CA"
+        android:backgroundTint="#94BC99"
         android:text="Resíduos de médio porte"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <!-- Large Waste Button -->
@@ -53,9 +53,9 @@
         android:id="@+id/largeWasteButton"
         android:layout_width="289dp"
         android:layout_height="95dp"
-        android:backgroundTint="#9FA8DA"
+        android:backgroundTint="#94BC99"
         android:text="Resíduos de grande porte"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
 </LinearLayout>
