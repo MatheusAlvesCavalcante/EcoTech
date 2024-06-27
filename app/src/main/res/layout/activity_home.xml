@@ -19,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        style="@style/button"
         android:layout_width="329dp"
         android:layout_height="77dp"
         android:background="@drawable/button_home"
@@ -32,12 +31,11 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        style="@style/button2"
         android:layout_width="329dp"
         android:layout_height="77dp"
         android:background="@drawable/button_home2"
         android:text="Grupo de Resíduos"
-        android:textColor="#184C2B"
+        android:textColor="#0C652D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
@@ -45,7 +43,6 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        style="@style/button3"
         android:background="@drawable/button_home3"
         android:layout_width="329dp"
         android:layout_height="77dp"
@@ -57,7 +54,8 @@
         tools:layout_editor_absoluteY="502dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        style="@style/button3"
+        style="@style/radius"
+
         android:layout_width="29dp"
         android:layout_height="33dp"
         android:background="@drawable/ic_icone"
@@ -65,7 +63,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="656dp" />
+        tools:layout_editor_absoluteY="656dp"
+        android:padding="20dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

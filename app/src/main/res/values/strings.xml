@@ -22,6 +22,15 @@
     <string name="neighborhood_5">Bairro: Jardim das Flores </string>
     <string name="view_details5">Ver detalhes</string>
 
+        <string-array name="cidades">
+            <item>Barueri</item>
+            <item>Carapicuíba</item>
+            <item>Itapevi</item>
+            <item>Jandira</item>
+            <item>Osasco</item>
+            <item>Pirapora do Bom Jesus</item>
+        </string-array>
+
 
 
 </resources>

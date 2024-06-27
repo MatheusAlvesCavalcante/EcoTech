@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EcoTech"
         tools:targetApi="31">
         <activity
+            android:name=".Cidade"
+            android:exported="false" />
+        <activity
             android:name=".DescarteResiduo"
             android:exported="false" />
         <activity
