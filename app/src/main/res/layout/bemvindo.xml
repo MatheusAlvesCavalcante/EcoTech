@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bem-vindo ao App EcoTech!"
+            android:text="@string/bem_vindo"
             android:textSize="18sp"
             android:textStyle="bold"
             android:padding="8dp"
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nosso aplicativo foi criado com um propósito em mente: facilitar a vida dos moradores e empresas da Sub-Região Oeste da Grande São Paulo na hora de descartar seus resíduos eletrônicos de maneira responsável e sustentável."
+            android:text="@string/texto1"
             android:padding="8dp"
             android:background="#invisible"
             android:layout_marginBottom="16dp"
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sabemos que a correta destinação de resíduos eletrônicos é essencial para o meio ambiente e para a saúde pública. Por isso, desenvolvemos esta plataforma para conectar os usuários a ecopontos de coleta confiáveis e próximos, onde eles podem descartar seus eletrônicos de forma segura e consciente."
+            android:text="@string/texto2"
             android:padding="8dp"
             android:background="#invisible"
             android:layout_marginBottom="16dp"
@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nosso aplicativo é especialmente dedicado aos moradores e empresas de Barueri, Carapicuíba, Itapevi, Jandira, Osasco, Pirapora do Bom Jesus e Santana de Parnaíba. Trabalhamos incansavelmente para garantir que você encontre o eco-ponto mais próximo de você, tornando o descarte de resíduos eletrônicos uma tarefa simples e acessível."
+            android:text="@string/texto3"
             android:padding="8dp"
             android:background="#invisible"
             android:layout_marginBottom="16dp"
@@ -52,7 +52,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Com o App EcoTech, você pode localizar facilmente os ecopontos de coleta mais próximos, obter informações sobre os tipos de resíduos aceitos em cada local e até mesmo receber notificações sobre eventos de coleta ou novos pontos de coleta na sua região. Junte-se a nós nessa jornada em prol do meio ambiente e da sustentabilidade."
+            android:text="@string/texto4"
             android:padding="8dp"
             android:background="#invisible"
             android:layout_marginBottom="16dp"
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Faça sua parte e ajude-nos a criar um futuro mais limpo e saudável para todos."
+            android:text="@string/texto5"
             android:textSize="16sp"
             android:textStyle="bold"
             android:padding="8dp"

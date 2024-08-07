@@ -15,20 +15,20 @@
         <activity
             android:name=".BemVindo"
             android:exported="false" />
-        <activity
-            android:name=".Cidade"
-            android:exported="false" />
+        <activity tools:ignore="ExtraText"
+            android:exported="true"
+            android:name=".Cidade">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
         <activity
             android:name=".DescarteResiduo"
             android:exported="false" />
         <activity
-            android:name=".VerDetalhes"
-            android:exported="false" />
-        <activity
             android:name=".ListaEcoPontos"
-            android:exported="false" />
-        <activity
-            android:name=".telasMobile"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -39,6 +39,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+
+
+</application>
 
 </manifest>
