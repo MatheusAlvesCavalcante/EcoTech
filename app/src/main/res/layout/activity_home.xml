@@ -42,9 +42,10 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:background="@drawable/button_home3"
+        android:id="@+id/appCompatButton3"
         android:layout_width="329dp"
         android:layout_height="77dp"
+        android:background="@drawable/button_home3"
         android:text="@string/pontos_de_coleta"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,18 +53,35 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="502dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        style="@style/radius"
+    <ImageView
+        android:id="@+id/appCompatButton4"
 
+        style="@style/radius"
         android:layout_width="29dp"
         android:layout_height="33dp"
         android:background="@drawable/ic_icone"
+        android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="656dp"
-        android:padding="20dp"/>
+        tools:layout_editor_absoluteY="656dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="50dp"
+        android:text="Sobre o App"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton4"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton3"
+        app:layout_constraintVertical_bias="0.125" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
