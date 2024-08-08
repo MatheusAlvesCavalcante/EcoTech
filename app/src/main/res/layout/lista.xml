@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lista"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListaEcoPontos">
@@ -52,11 +53,11 @@
             android:id="@+id/view_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="invisible"
             android:text="@string/view_details"
             android:textColor="#1E91ED"
             android:textSize="14sp"
-            android:background="invisible"
-            app:iconTint="#20F7FAF7"/>
+            app:iconTint="#20F7FAF7" />
 
     </LinearLayout>
 
@@ -105,14 +106,13 @@
             android:id="@+id/view_details2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="invisible"
             android:text="@string/view_details2"
             android:textColor="#1E91ED"
             android:textSize="14sp"
-            android:background="invisible"
             app:iconTint="#20F7FAF7" />
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -159,14 +159,13 @@
             android:id="@+id/view_details3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="invisible"
             android:text="@string/view_details3"
             android:textColor="#1E91ED"
             android:textSize="14sp"
-            android:background="invisible"
             app:iconTint="#20F7FAF7" />
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -213,10 +212,10 @@
             android:id="@+id/view_details4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="invisible"
             android:text="@string/view_details4"
             android:textColor="#1E91ED"
             android:textSize="14sp"
-            android:background="invisible"
             app:iconTint="#20F7FAF7" />
 
     </LinearLayout>
@@ -280,10 +279,10 @@
             android:id="@+id/view_details5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="invisible"
             android:text="@string/view_details5"
             android:textColor="#1E91ED"
             android:textSize="14sp"
-            android:background="invisible"
             app:iconTint="#20F7FAF7" />
 
     </LinearLayout>

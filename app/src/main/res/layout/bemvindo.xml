@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bem_vindo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#EFEFEF">
+    android:background="#EFEFEF"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,60 +14,60 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="invisible"
+            android:padding="8dp"
             android:text="@string/bem_vindo"
+            android:textColor="#638B2C"
             android:textSize="18sp"
-            android:textStyle="bold"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="#invisible"
             android:padding="8dp"
-            android:textColor="#638B2C"
+            android:text="@string/texto1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="#invisible"
+            android:padding="8dp"
+            android:text="@string/texto2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="#invisible"
+            android:padding="8dp"
+            android:text="@string/texto3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="#invisible"
+            android:padding="8dp"
+            android:text="@string/texto4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:background="invisible"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texto1"
             android:padding="8dp"
-            android:background="#invisible"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texto2"
-            android:padding="8dp"
-            android:background="#invisible"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texto3"
-            android:padding="8dp"
-            android:background="#invisible"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/texto4"
-            android:padding="8dp"
-            android:background="#invisible"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/texto5"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:padding="8dp"
             android:textColor="#638B2C"
-            android:background="invisible"
-            android:layout_gravity="center_horizontal"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>
