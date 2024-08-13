@@ -19,7 +19,7 @@ public class Cidade extends AppCompatActivity {
             setContentView(R.layout.cidade);
 
             Spinner spinner = findViewById(R.id.spinner);
-            ImageButton nextButton = findViewById(R.id.nextButton);
+
 
             // Crie um ArrayAdapter usando o array de strings e um layout padrão do Spinner
             ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -46,16 +46,9 @@ public class Cidade extends AppCompatActivity {
             });
 
             // Adicione um listener ao botão de próximo
-            nextButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String selectedCity = spinner.getSelectedItem().toString();
-                    // Navegar para a próxima tela ou realizar alguma ação
-                    Toast.makeText(Cidade.this, "Próxima ação com a cidade: " + selectedCity, Toast.LENGTH_SHORT).show();
-                }
-            });
+
         }
     }
 
-}
+
 

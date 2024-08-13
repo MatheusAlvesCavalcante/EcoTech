@@ -17,18 +17,12 @@ public class DescarteResiduo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageButton backButton = findViewById(R.id.backButton);
+
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button smallWasteButton = findViewById(R.id.smallWasteButton);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button mediumWasteButton = findViewById(R.id.mediumWasteButton);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button largeWasteButton = findViewById(R.id.largeWasteButton);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Action for back button
-                onBackPressed();
-            }
-        });
+
 
         smallWasteButton.setOnClickListener(new View.OnClickListener() {
             @Override

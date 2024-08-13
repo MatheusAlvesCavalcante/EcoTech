@@ -11,7 +11,7 @@
 
     <!-- Back Button -->
     <!-- Certifique-se de ter esse recurso drawable -->
-    android:contentDescription="@string/back_button" />
+  <!-- android:contentDescription="@string/btn_descarte" -->
 
     <!-- Title -->
 
