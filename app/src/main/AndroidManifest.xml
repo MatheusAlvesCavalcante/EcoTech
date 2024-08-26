@@ -13,17 +13,18 @@
         android:theme="@style/Theme.EcoTech"
         tools:targetApi="31">
         <activity
+            android:name=".Cidade"
+            android:exported="false"
+            tools:ignore="ExtraText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".BemVindo"
             android:exported="false" />
-        <activity tools:ignore="ExtraText"
-            android:exported="true"
-            android:name=".Cidade">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-
         <activity
             android:name=".DescarteResiduo"
             android:exported="false" />
@@ -39,8 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-</application>
+    </application>
 
 </manifest>
