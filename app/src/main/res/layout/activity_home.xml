@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="329dp"
         android:layout_height="77dp"
         android:layout_marginTop="46dp"
@@ -33,13 +33,13 @@
         tools:ignore="MissingConstraints,OnClick"
         android:onClick="abrindo_tela"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_descarte"
         android:layout_width="329dp"
         android:layout_height="77dp"
         android:background="@drawable/button_home2"
         android:text="@string/grupo_de_residuos"
-        android:textColor="#0C652D"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="401dp"
@@ -48,50 +48,54 @@
         />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_lista"
         android:layout_width="329dp"
         android:layout_height="77dp"
         android:background="@drawable/button_home3"
         android:text="@string/pontos_de_coleta"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="502dp"
         android:onClick="abrindo_tela_lista"
         tools:ignore="MissingConstraints,OnClick"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_bem_vindo"
 
         style="@style/radius"
-        android:layout_width="74dp"
-        android:layout_height="49dp"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
         android:layout_marginTop="77dp"
         android:layout_marginBottom="42dp"
         android:background="@drawable/ic_icone"
         android:onClick="abrindo_tela_bem_vindo"
         android:padding="20dp"
-        android:text="info"
+        android:text="."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.008"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_lista"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints,OnClick" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="82dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="83dp"
+        android:layout_width="87dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="200dp"
         android:layout_marginBottom="50dp"
         android:text="Sobre o App"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/btn_bem_vindo"
         app:layout_constraintTop_toBottomOf="@+id/btn_lista"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
