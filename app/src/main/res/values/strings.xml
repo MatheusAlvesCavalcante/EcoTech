@@ -32,6 +32,12 @@
     <string name="grupo_de_residuos">Grupo de Resíduos</string>
     <string name="pontos_de_coleta">Pontos de Coleta</string>
     <string name="escolha_uma_cidade">Escolha uma cidade</string>
+    <string name="importancia_rec">Reciclar resíduos eletrônicos é vital por diversas razões</string>
+    <string name="texto6">Evita a poluição ambiental, já que esses dispositivos contêm substâncias tóxicas.</string>
+    <string name="texto7">Preserva recursos naturais ao reciclar materiais valiosos presentes nos eletrônicos.</string>
+    <string name="texto8"> Reduz a produção de resíduos, contribuindo para a preservação do meio ambiente.</string>
+    <string name="texto9">Permite a recuperação de materiais valiosos que podem ser reutilizados, economizando energia e recursos na fabricação de novos produtos.</string>
+    <string name="texto10">Reciclar resíduos eletrônicos é uma prática essencial para proteger o planeta e promover um futuro sustentável.</string>
 
 
 </resources>
