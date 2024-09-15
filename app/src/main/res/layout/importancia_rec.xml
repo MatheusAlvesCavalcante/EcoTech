@@ -49,7 +49,7 @@
         android:padding="8dp"
         android:text="@string/texto10"
         android:textColor="#638B2C"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -87,7 +88,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -104,9 +106,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-
-
-
+        android:textSize="16sp"
         />
 
     <TextView
@@ -124,7 +124,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -138,10 +139,11 @@
         android:padding="8dp"
         android:text="@string/importancia_rec"
         android:textColor="#638B2C"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_bem_vindo" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_bem_vindo"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
