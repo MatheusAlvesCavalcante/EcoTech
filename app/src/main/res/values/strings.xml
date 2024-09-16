@@ -38,6 +38,12 @@
     <string name="texto8"> Reduz a produção de resíduos, contribuindo para a preservação do meio ambiente.</string>
     <string name="texto9">Permite a recuperação de materiais valiosos que podem ser reutilizados, economizando energia e recursos na fabricação de novos produtos.</string>
     <string name="texto10">Reciclar resíduos eletrônicos é uma prática essencial para proteger o planeta e promover um futuro sustentável.</string>
-
+    <string name="grupo_res">Saiba a qual grupo seu resíduo pertence!</string>
+    <string name="texto_rec1">Pequeno porte</string>
+    <string name="texto_rec2">Smartphones, fones de ouvido, smartwatches e cameras digitais.</string>
+    <string name="texto_rec3">Médio porte</string>
+    <string name="texto_rec4">Notebooks, tablets (de 7 a 10 polegadas) e cameras DSLR.</string>
+    <string name="texto_rec5">Grande porte</string>
+    <string name="texto_rec6">Desktops e Sistemas de Home Theater.</string>
 
 </resources>

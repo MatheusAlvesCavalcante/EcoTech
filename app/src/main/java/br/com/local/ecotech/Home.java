@@ -24,6 +24,10 @@ public class Home extends AppCompatActivity {
             }
         });
 
+
+
+
+
         Button abrindo_tela_lista = findViewById(R.id.btn_lista);
 
         abrindo_tela_lista.setOnClickListener(new View.OnClickListener() {
@@ -35,9 +39,15 @@ public class Home extends AppCompatActivity {
             }
         });
 
-    Button abrindo_tela_descarte = findViewById(R.id.btn_descarte);
 
-        abrindo_tela_descarte.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+
+    Button abrindo_tela_grupo_res = findViewById(R.id.btn_descarte);
+
+        abrindo_tela_grupo_res.setOnClickListener(new View.OnClickListener() {
 
 @Override
 public void onClick(View v){
@@ -45,6 +55,12 @@ public void onClick(View v){
         startActivity (intent);
         }
         });
+
+
+
+
+
+
         }
 }
 
