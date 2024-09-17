@@ -56,6 +56,19 @@ public void onClick(View v){
         }
         });
 
+        Button abrindo_tela_importancia = findViewById(R.id.appCompatButton);
+
+        abrindo_tela_importancia.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(Home.this,ImportanciaREC.class );
+                startActivity (intent);
+            }
+        });
+
+
+
 
 
 
