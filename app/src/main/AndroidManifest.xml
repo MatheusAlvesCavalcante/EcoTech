@@ -17,13 +17,15 @@
             android:exported="false" />
         <activity
             android:name=".DescarteResiduo"
-            android:exported="false" />
+            android:exported="true"/> >
+
         <activity
             android:name=".ListaEcoPontos"
             android:exported="false" />
 
         <activity android:name=".Home"
             android:exported="true"/>
+        
         <activity
             android:name=".ImportanciaREC"
             android:exported="true" />
@@ -31,17 +33,16 @@
             android:name=".GrupoRes"
             android:exported="false" />
 
-
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
     </application>
 
 </manifest>

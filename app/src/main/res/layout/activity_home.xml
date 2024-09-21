@@ -56,7 +56,7 @@
         android:layout_height="77dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/button_home3"
-        android:onClick=" Button abrindo_tela_descarte"
+        android:onClick="abrindo_tela_descarte"
         android:text="@string/pontos_de_coleta"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

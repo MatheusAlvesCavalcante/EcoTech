@@ -16,7 +16,7 @@ public class DescarteResiduo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.descarte_residuo);
 
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button smallWasteButton = findViewById(R.id.smallWasteButton);
