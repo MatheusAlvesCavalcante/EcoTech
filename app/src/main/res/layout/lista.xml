@@ -13,14 +13,14 @@
         android:id="@+id/collection_point_1"
         android:layout_width="377dp"
         android:layout_height="92dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/background_item"
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_text">
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_2">
 
         <ImageView
             android:layout_width="53dp"
@@ -66,14 +66,14 @@
         android:id="@+id/collection_point_2"
         android:layout_width="377dp"
         android:layout_height="92dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/background_item"
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_text">
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_3">
 
         <ImageView
             android:layout_width="53dp"
@@ -119,14 +119,14 @@
         android:id="@+id/collection_point_3"
         android:layout_width="377dp"
         android:layout_height="92dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/background_item"
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_text">
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_4">
 
         <ImageView
             android:layout_width="53dp"
@@ -172,14 +172,14 @@
         android:id="@+id/collection_point_4"
         android:layout_width="377dp"
         android:layout_height="92dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/background_item"
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_text">
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_5">
 
         <ImageView
             android:layout_width="53dp"
@@ -220,33 +220,18 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/header_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/header_text"
-        android:textAlignment="center"
-        android:textColor="#638B2C"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/collection_point_5"
         android:layout_width="377dp"
         android:layout_height="92dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/background_item"
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_text">
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCidade">
 
         <ImageView
             android:layout_width="53dp"
@@ -286,5 +271,25 @@
             app:iconTint="#20F7FAF7" />
 
     </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
