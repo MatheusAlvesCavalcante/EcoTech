@@ -38,8 +38,6 @@ public class Home extends AppCompatActivity {
         });
 
 
-
-
         Button abrindo_tela_importancia = findViewById(R.id.appCompatButton);
 
         abrindo_tela_importancia.setOnClickListener(new View.OnClickListener() {
