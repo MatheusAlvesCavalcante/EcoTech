@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.TextAppearanceInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -16,11 +17,15 @@ public class ListaEcoPontos extends AppCompatActivity {
     Spinner spinnerCidade;
     String[] listaCidades = {
             "Selecione a Cidade",
-            "Carapicuiba",
+            "Carapicuíba",
             "Osasco",
             "Barueri",
             "Jandira",
-            "Santana"};
+            "Santana de Parnaíba",
+            "Itapevi",
+            "Pirapora do Bom Jesus"
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +41,9 @@ public class ListaEcoPontos extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 //                    Toast toast = Toast.makeText(Toast.LENGTH_SHORT).show();
-               cidade.setText(spinnerCidade.getItemAtPosition(position).toString())  ;
+               cidade.setText(spinnerCidade.getItemAtPosition(position).toString());
             }
+
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {

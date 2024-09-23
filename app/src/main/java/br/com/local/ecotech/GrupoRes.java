@@ -25,7 +25,7 @@ public class GrupoRes extends AppCompatActivity  {
 
         Button abrindo_tela_lista = findViewById(R.id.btn_tela_lista1);
 
-        abrindo_tela_home.setOnClickListener(new View.OnClickListener() {
+        abrindo_tela_lista.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v){

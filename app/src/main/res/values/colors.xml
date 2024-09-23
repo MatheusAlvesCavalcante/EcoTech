@@ -7,4 +7,6 @@
     <color name="mediumWasteButton">#B3E5FC</color>
     <color name="largeWasteButton">#9FA8DA</color>
     <color name="my_background_color">#C1BFBF</color>
+    <color name="color_spinner">#000000</color>
+
 </resources>
