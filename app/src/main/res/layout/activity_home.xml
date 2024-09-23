@@ -28,7 +28,7 @@
         android:onClick="abrindo_tela_tela_importancia"
         android:text="@string/porque_reciclar"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btn_descarte"
+        app:layout_constraintBottom_toTopOf="@+id/btn_lista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img"
@@ -36,33 +36,21 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_descarte"
+        android:id="@+id/btn_lista"
         android:layout_width="329dp"
         android:layout_height="77dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_home2"
         android:onClick="abrindo_tela_grupo_re"
-        android:text="@string/grupo_de_residuos"
+        android:text="@string/pontos_de_coleta"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btn_lista"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
         tools:ignore="MissingConstraints,OnClick" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_lista"
-        android:layout_width="329dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/button_home3"
-        android:onClick="abrindo_tela_descarte"
-        android:text="@string/pontos_de_coleta"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_descarte"
-        tools:ignore="MissingConstraints,OnClick" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_bem_vindo"
@@ -80,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.008"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_lista"
+
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints,OnClick" />
 
@@ -97,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toEndOf="@+id/btn_bem_vindo"
-        app:layout_constraintTop_toBottomOf="@+id/btn_lista"
+
         app:layout_constraintVertical_bias="1.0" />
 
 

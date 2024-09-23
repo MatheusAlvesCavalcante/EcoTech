@@ -12,12 +12,13 @@
         style="@style/radius"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/ic_back_arrow"
-        android:onClick="abrindo_tela_home"
+        android:onClick="abrindo_tela_lista"
         android:padding="20dp"
         android:text="."
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,13 +32,15 @@
         android:layout_height="98dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="4dp"
         android:background="@android:color/transparent"
         android:padding="8dp"
         android:text="@string/grupo_res"
+        android:textAlignment="center"
         android:textColor="#638B2C"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,8 +53,9 @@
         android:layout_height="147dp"
         android:layout_centerInParent="true"
         android:layout_marginStart="46dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="41dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_rectangle"
         android:orientation="vertical"
         android:padding="16dp"
@@ -74,10 +78,10 @@
             android:id="@+id/text_view_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="1dp"
             android:text="@string/texto_rec2"
             android:textColor="#4A4949"
-            android:textSize="18sp"
+            android:textSize="13sp"
             android:textStyle="italic" />
 
     </LinearLayout>
@@ -89,7 +93,7 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="46dp"
         android:layout_marginEnd="41dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_rectangle"
         android:orientation="vertical"
         android:padding="16dp"
@@ -115,7 +119,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/texto_rec4"
             android:textColor="#4A4949"
-            android:textSize="18sp"
+            android:textSize="13sp"
             android:textStyle="italic" />
 
     </LinearLayout>
@@ -127,7 +131,7 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="46dp"
         android:layout_marginEnd="41dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="112dp"
         android:background="@drawable/rounded_rectangle"
         android:orientation="vertical"
         android:padding="16dp"
@@ -153,10 +157,27 @@
             android:layout_marginTop="16dp"
             android:text="@string/texto_rec6"
             android:textColor="#4A4949"
-            android:textSize="18sp"
+            android:textSize="13sp"
             android:textStyle="italic" />
 
     </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_tela_lista1"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_home2"
+        android:onClick="abrindo_tela_grupo_re"
+        android:text="@string/continuar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:ignore="MissingConstraints,OnClick" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

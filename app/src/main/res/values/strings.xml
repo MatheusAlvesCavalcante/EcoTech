@@ -29,7 +29,6 @@
     <string name="texto4">Com o App EcoTech, você pode localizar facilmente os ecopontos de coleta mais próximos, obter informações sobre os tipos de resíduos aceitos em cada local e até mesmo receber notificações sobre eventos de coleta ou novos pontos de coleta na sua região. Junte-se a nós nessa jornada em prol do meio ambiente e da sustentabilidade.</string>
     <string name="texto5">Faça sua parte e ajude-nos a criar um futuro mais limpo e saudável para todos.</string>
     <string name="porque_reciclar">Porque reciclar resíduos eletônicos?</string>
-    <string name="grupo_de_residuos">Grupo de Resíduos</string>
     <string name="pontos_de_coleta">Pontos de Coleta</string>
     <string name="escolha_uma_cidade">Escolha uma cidade</string>
     <string name="importancia_rec">Reciclar resíduos eletrônicos é vital por diversas razões</string>
@@ -38,12 +37,12 @@
     <string name="texto8"> Reduz a produção de resíduos, contribuindo para a preservação do meio ambiente.</string>
     <string name="texto9">Permite a recuperação de materiais valiosos que podem ser reutilizados, economizando energia e recursos na fabricação de novos produtos.</string>
     <string name="texto10">Reciclar resíduos eletrônicos é uma prática essencial para proteger o planeta e promover um futuro sustentável.</string>
-    <string name="grupo_res">Saiba a qual grupo seu resíduo pertence!</string>
+    <string name="grupo_res">Essas informações ajudarão na escolha correta de grupo de resíduos na próxima etapa</string>
     <string name="texto_rec1">Pequeno porte</string>
-    <string name="texto_rec2">Smartphones, fones de ouvido, smartwatches e cameras digitais.</string>
+    <string name="texto_rec2">Smartphones, equipamentos de Áudio Portáteis, relógios Digitais, cameras digitais, pilhas e baterias portáteis, mouses, teclados, calculadoras eletrônicas, carregadores.</string>
     <string name="texto_rec3">Médio porte</string>
-    <string name="texto_rec4">Notebooks, tablets (de 7 a 10 polegadas) e cameras DSLR.</string>
+    <string name="texto_rec4">Computadores de Mesa, notebooks, impressoras, multifuncionais, televisores (telas menores que 32 polegadas),videogames, consoles, equipamentos de fax, aparelhos de DVD, blu-ray, câmeras dlsr.</string>
     <string name="texto_rec5">Grande porte</string>
-    <string name="texto_rec6">Desktops e Sistemas de Home Theater.</string>
-
+    <string name="texto_rec6">Televisores (telas maiores que 32 polegadas), refrigeradores, freezers, máquinas de lavar, secar, forno de Micro-ondas, ar-condicionado, Home Theater, impressoras de grande formato.</string>
+    <string name="continuar">Continuar</string>
 </resources>

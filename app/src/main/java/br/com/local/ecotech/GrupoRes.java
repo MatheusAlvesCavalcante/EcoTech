@@ -22,5 +22,16 @@ public class GrupoRes extends AppCompatActivity  {
                 startActivity (intent);
             }
         });
+
+        Button abrindo_tela_lista = findViewById(R.id.btn_tela_lista1);
+
+        abrindo_tela_home.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(GrupoRes.this,   ListaEcoPontos.class );
+                startActivity (intent);
+            }
+        });
     }
 }
