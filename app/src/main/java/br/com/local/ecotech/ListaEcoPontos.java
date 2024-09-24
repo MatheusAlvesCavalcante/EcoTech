@@ -20,13 +20,13 @@ public class ListaEcoPontos extends AppCompatActivity {
     CheckBox checkBoxPequeno, checkBoxMedio, checkBoxGrande;
     String[] listaCidades = {
             "Selecione a Cidade",
-            "Carapicuíba", // Aceita grande
-            "Osasco",       // Aceita pequeno e médio
-            "Barueri",      // Configure conforme necessário
-            "Jandira",      // Configure conforme necessário
-            "Santana de Parnaíba", // Configure conforme necessário
-            "Itapevi",      // Configure conforme necessário
-            "Pirapora do Bom Jesus" // Configure conforme necessário
+            "Carapicuíba",
+            "Osasco",
+            "Barueri",
+            "Jandira",
+            "Santana de Parnaíba",
+            "Itapevi",
+            "Pirapora do Bom Jesus"
     };
 
     List<String> cidadesFiltradas;
@@ -59,13 +59,14 @@ public class ListaEcoPontos extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String cidadeSelecionada = spinnerCidade.getItemAtPosition(position).toString();
-                // Exibir um Toast com a cidade selecionada
+
                 Toast.makeText(ListaEcoPontos.this, "Cidade selecionada: " + cidadeSelecionada, Toast.LENGTH_SHORT).show();
                 filtrarPontosDeColeta(cidadeSelecionada);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
     }
@@ -81,29 +82,31 @@ public class ListaEcoPontos extends AppCompatActivity {
         cidadesFiltradas = new ArrayList<>();
 
         if (checkBoxPequeno.isChecked()) {
-            cidadesFiltradas.add("Osasco"); // Exemplo de cidade que aceita pequeno
-            // Adicione mais cidades conforme necessário
+            cidadesFiltradas.add("Osasco");
+
         }
         if (checkBoxMedio.isChecked()) {
-            cidadesFiltradas.add("Osasco"); // Exemplo de cidade que aceita médio
-            // Adicione mais cidades conforme necessário
+            cidadesFiltradas.add("Osasco");
+
         }
         if (checkBoxGrande.isChecked()) {
-            cidadesFiltradas.add("Carapicuíba"); // Exemplo de cidade que aceita grande
-            // Adicione mais cidades conforme necessário
+            cidadesFiltradas.add("Carapicuíba");
         }
 
         atualizarSpinner();
     }
 
     private void atualizarSpinner() {
+        if (cidadesFiltradas.isEmpty()) {
+            cidadesFiltradas.add(0, "Selecione a Cidade");
+        }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.text_spinner, cidadesFiltradas);
         spinnerCidade.setAdapter(adapter);
-        spinnerCidade.setSelection(0); // Reseta a seleção do spinner
+        spinnerCidade.setSelection(0);
     }
 
     private void filtrarPontosDeColeta(String cidade) {
-        // Adicione a lógica de filtragem de pontos de coleta aqui
         if (cidade.equals("Selecione a Cidade")) {
             mostrarTodosPontosDeColeta();
         } else {
