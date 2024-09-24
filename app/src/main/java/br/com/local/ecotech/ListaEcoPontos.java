@@ -1,6 +1,9 @@
 package br.com.local.ecotech;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.AlertDialog;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.annotation.SuppressLint;
@@ -15,6 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaEcoPontos extends AppCompatActivity {
+
+
+
+
+
 
     Spinner spinnerCidade;
     CheckBox checkBoxPequeno, checkBoxMedio, checkBoxGrande;
@@ -124,5 +132,9 @@ public class ListaEcoPontos extends AppCompatActivity {
         collectionPoint3.setVisibility(View.VISIBLE);
         collectionPoint4.setVisibility(View.VISIBLE);
         collectionPoint5.setVisibility(View.VISIBLE);
+
+
+
+
     }
 }
