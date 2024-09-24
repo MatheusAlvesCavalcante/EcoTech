@@ -1,6 +1,8 @@
 package br.com.local.ecotech;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -8,11 +10,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class ListaEcoPontos extends AppCompatActivity {
 
-    TextView cidade;
+
     Spinner spinnerCidade;
     String[] listaCidades = {
             "Selecione a Cidade",
@@ -33,9 +35,8 @@ public class ListaEcoPontos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista);
 
-        // Referências aos elementos de layout
+
         spinnerCidade = findViewById(R.id.spinnerCidade);
-        cidade = findViewById(R.id.txtCidade);
         collectionPoint1 = findViewById(R.id.collection_point_1);
         collectionPoint2 = findViewById(R.id.collection_point_2);
         collectionPoint3 = findViewById(R.id.collection_point_3);
@@ -48,7 +49,10 @@ public class ListaEcoPontos extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String cidadeSelecionada = spinnerCidade.getItemAtPosition(position).toString();
-                cidade.setText(cidadeSelecionada);
+
+                // Exibir um Toast com a cidade selecionada
+                Toast.makeText(ListaEcoPontos.this, "Cidade selecionada: " + cidadeSelecionada, Toast.LENGTH_SHORT).show();
+
                 filtrarPontosDeColeta(cidadeSelecionada);
             }
 
@@ -57,6 +61,7 @@ public class ListaEcoPontos extends AppCompatActivity {
             }
         });
     }
+
     private void preencherCidade() {
         spinnerCidade.setAdapter(new ArrayAdapter<>(
                 this,
@@ -82,5 +87,7 @@ public class ListaEcoPontos extends AppCompatActivity {
         collectionPoint3.setVisibility(View.VISIBLE);
         collectionPoint4.setVisibility(View.VISIBLE);
         collectionPoint5.setVisibility(View.VISIBLE);
+
+
     }
 }
