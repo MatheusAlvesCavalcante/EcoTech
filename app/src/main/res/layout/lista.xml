@@ -7,14 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".ListaEcoPontos">
 
-    <!-- Ponto de Coleta 1 -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_bem_vindo2"
         style="@style/radius"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/ic_back_arrow"
         android:onClick="abrindo_tela_lista"
         android:padding="20dp"
@@ -23,24 +21,70 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,OnClick" />
 
+    <LinearLayout
+        android:id="@+id/checkbox_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bem_vindo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"> <!-- Adicionando margem inferior para separar do Spinner -->
+
+            <CheckBox
+                android:id="@+id/checkboxPequeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pequeno"
+                android:layout_marginEnd="16dp" /> <!-- Adicionando margem à direita -->
+
+            <CheckBox
+                android:id="@+id/checkboxMedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio"
+                android:layout_marginEnd="16dp" /> <!-- Adicionando margem à direita -->
+
+            <CheckBox
+                android:id="@+id/checkboxGrande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grande"
+                android:layout_marginEnd="16dp" /> <!-- Adicionando margem à direita -->
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerCidade"
+            android:layout_width="376dp"
+            android:layout_height="58dp"
+            android:textColor="#000000" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/collection_point_1"
         android:layout_width="377dp"
         android:layout_height="92dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/background_item"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:tag="Barueri"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_container"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collection_point_2"
-        android:tag="Barueri">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="53dp"
@@ -78,24 +122,24 @@
             android:textColor="#1E91ED"
             android:textSize="14sp"
             app:iconTint="#20F7FAF7" />
-
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/collection_point_2"
         android:layout_width="377dp"
         android:layout_height="92dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/background_item"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/collection_point_1"
+        android:tag="Carapicuíba"
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collection_point_3"
-        android:tag="Carapicuíba">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="53dp"
@@ -133,25 +177,24 @@
             android:textColor="#1E91ED"
             android:textSize="14sp"
             app:iconTint="#20F7FAF7" />
-
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/collection_point_3"
         android:layout_width="377dp"
         android:layout_height="92dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/background_item"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/collection_point_2"
+        android:tag="Itapevi"
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collection_point_4"
-        android:tag="Itapevi">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="53dp"
@@ -189,25 +232,24 @@
             android:textColor="#1E91ED"
             android:textSize="14sp"
             app:iconTint="#20F7FAF7" />
-
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/collection_point_4"
         android:layout_width="377dp"
         android:layout_height="92dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/background_item"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/collection_point_3"
+        android:tag="Osasco"
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collection_point_5"
-        android:tag="São Paulo">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="53dp"
@@ -245,31 +287,29 @@
             android:textColor="#1E91ED"
             android:textSize="14sp"
             app:iconTint="#20F7FAF7" />
-
     </LinearLayout>
 
     <LinearLayout
-
         android:id="@+id/collection_point_5"
         android:layout_width="377dp"
         android:layout_height="92dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/background_item"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBox3"
+        android:tag="São Paulo"
+        app:layout_constraintTop_toBottomOf="@+id/collection_point_4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
-        app:layout_constraintVertical_bias="0.486"
-        android:tag="Osasco">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
-            android:src="@drawable/local" />
+            android:src="@drawable/local5" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -302,71 +342,6 @@
             android:textColor="#1E91ED"
             android:textSize="14sp"
             app:iconTint="#20F7FAF7" />
-
     </LinearLayout>
-
-    <Spinner
-        android:id="@+id/spinnerCidade"
-        android:layout_width="367dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/collection_point_5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_bem_vindo2"
-        app:layout_constraintVertical_bias="0.923" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="110dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
-        android:text="Médio Porte"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerCidade"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/btn_bem_vindo2"
-        app:layout_constraintVertical_bias="0.50"
-        tools:ignore="MissingConstraints" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="110dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
-        android:text="Pequeno Porte"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerCidade"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_bem_vindo2"
-        tools:ignore="MissingConstraints" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="110dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
-        android:text="Grande Porte"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerCidade"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_bem_vindo2"
-        tools:ignore="MissingConstraints"
-        />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
