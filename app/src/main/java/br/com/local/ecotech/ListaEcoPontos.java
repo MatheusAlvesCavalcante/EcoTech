@@ -1,7 +1,6 @@
 package br.com.local.ecotech;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -19,11 +18,6 @@ import java.util.List;
 
 public class ListaEcoPontos extends AppCompatActivity {
 
-
-
-
-
-
     Spinner spinnerCidade;
     CheckBox checkBoxPequeno, checkBoxMedio, checkBoxGrande;
     String[] listaCidades = {
@@ -39,6 +33,7 @@ public class ListaEcoPontos extends AppCompatActivity {
 
     List<String> cidadesFiltradas;
     LinearLayout collectionPoint1, collectionPoint2, collectionPoint3, collectionPoint4, collectionPoint5;
+    Button btnDetalhes1, btnDetalhes2, btnDetalhes3, btnDetalhes4, btnDetalhes5;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -56,6 +51,14 @@ public class ListaEcoPontos extends AppCompatActivity {
         collectionPoint3 = findViewById(R.id.collection_point_3);
         collectionPoint4 = findViewById(R.id.collection_point_4);
         collectionPoint5 = findViewById(R.id.collection_point_5);
+
+        btnDetalhes1 = findViewById(R.id.view_details);
+        btnDetalhes2 = findViewById(R.id.view_details2);
+        btnDetalhes3 = findViewById(R.id.view_details3);
+        btnDetalhes4 = findViewById(R.id.view_details4);
+        btnDetalhes5 = findViewById(R.id.view_details5);
+
+        setupDetailsButtons();
 
         preencherCidade();
 
@@ -77,6 +80,23 @@ public class ListaEcoPontos extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void setupDetailsButtons() {
+        btnDetalhes1.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Barueri..."));
+        btnDetalhes2.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Carapicuíba..."));
+        btnDetalhes3.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Itapevi..."));
+        btnDetalhes4.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Osasco..."));
+        btnDetalhes5.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em São Paulo..."));
+    }
+
+    private void mostrarDetalhes(String detalhes) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Detalhes do Ponto de Coleta");
+        builder.setMessage(detalhes);
+        builder.setPositiveButton("OK", (dialog, which) -> dialog.dismiss());
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     private void preencherCidade() {
@@ -117,7 +137,7 @@ public class ListaEcoPontos extends AppCompatActivity {
     private void filtrarPontosDeColeta(String cidade) {
         if (cidade.equals("Selecione a Cidade")) {
             mostrarTodosPontosDeColeta();
-        } else {
+        }  else {
             collectionPoint1.setVisibility(collectionPoint1.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
             collectionPoint2.setVisibility(collectionPoint2.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
             collectionPoint3.setVisibility(collectionPoint3.getTag().equals(cidade) ? View.VISIBLE : View.GONE);

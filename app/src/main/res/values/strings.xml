@@ -45,6 +45,7 @@
     <string name="texto_rec5">Grande porte</string>
     <string name="texto_rec6">Televisores (telas maiores que 32 polegadas), refrigeradores, freezers, máquinas de lavar, secar, forno de Micro-ondas, ar-condicionado, Home Theater, impressoras de grande formato.</string>
     <string name="continuar">Continuar</string>
+
     <string-array name="cidades_array">
         <item>São Paulo</item>
         <item>Osasco</item>
