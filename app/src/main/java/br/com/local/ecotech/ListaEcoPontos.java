@@ -83,11 +83,11 @@ public class ListaEcoPontos extends AppCompatActivity {
     }
 
     private void setupDetailsButtons() {
-        btnDetalhes1.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Barueri..."));
-        btnDetalhes2.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Carapicuíba..."));
-        btnDetalhes3.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Itapevi..."));
-        btnDetalhes4.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em Osasco..."));
-        btnDetalhes5.setOnClickListener(v -> mostrarDetalhes("Detalhes do ponto de coleta em São Paulo..."));
+        btnDetalhes1.setOnClickListener(v -> mostrarDetalhes("Ecoponto Alphaville, Coleta seletiva de resíduos eletrônicos, Rua das Árvores, 123, 06410000, 123, Alphaville, Barueri, SP,Próximo ao shopping, (11) 1234-5678, Seg-Sex: 08:00-18:00"));
+        btnDetalhes2.setOnClickListener(v -> mostrarDetalhes("Ecoponto Vila Cretti, Coleta seletiva de resíduos eletrônicos, Avenida dos Rios 456, 06345000, 456, Vila Cretti, Carapicuíba, SP, Próximo ao centro comercial, (11) 2345-6789, Seg-Sex: 09:00-19:00"));
+        btnDetalhes3.setOnClickListener(v -> mostrarDetalhes("Ecoponto Amador Bueno, Coleta seletiva de resíduos eletrônicos, Rua das Flores, 789, 06677000, 789, Amador Bueno, Itapevi, SP, Próximo à estação de trem, (11) 3456-7890, Seg-Sex: 07:00-17:00"));
+        btnDetalhes4.setOnClickListener(v -> mostrarDetalhes("Ecoponto Jardim Alvorada, Coleta seletiva de resíduos eletrônicos, Avenida das Aves, 1011, 06600000, 1011, Jardim Alvorada, Jandira, SP, Próximo ao centro de saúde, (11) 4567-8901, Seg-Sex: 10:00-20:00"));
+        btnDetalhes5.setOnClickListener(v -> mostrarDetalhes("Ecoponto Jardim das Flores, Coleta seletiva de resíduos eletrônicos, Rua dos Lagos, 1213, 06000000, 1213, Jardim das Flores, Osasco, SP, Próximo ao parque, (11) 3456-7890, Seg-Sex: 07:00-17:00"));
     }
 
     private void mostrarDetalhes(String detalhes) {
@@ -120,6 +120,54 @@ public class ListaEcoPontos extends AppCompatActivity {
         if (checkBoxGrande.isChecked()) {
             cidadesFiltradas.add("Carapicuíba");
         }
+        if (checkBoxMedio.isChecked()) {
+            cidadesFiltradas.add("Carapicuíba");
+
+        }
+        if (checkBoxPequeno.isChecked()) {
+            cidadesFiltradas.add("Carapicuíba");
+
+        }
+        if (checkBoxPequeno.isChecked()) {
+            cidadesFiltradas.add("Barueri");
+        }
+        if (checkBoxMedio.isChecked()) {
+            cidadesFiltradas.add("Barueri");
+        }
+        if (checkBoxGrande.isChecked()) {
+            cidadesFiltradas.add("Barueri");
+        }
+        if (checkBoxMedio.isChecked()) {
+            cidadesFiltradas.add("Itapevi");
+        }
+        if (checkBoxPequeno.isChecked()) {
+            cidadesFiltradas.add("Itapevi");
+        }
+
+        if (checkBoxMedio.isChecked()) {
+            cidadesFiltradas.add("Jandira");
+        }
+        if (checkBoxPequeno.isChecked()) {
+            cidadesFiltradas.add("Jandira");
+        }
+        if (checkBoxGrande.isChecked()) {
+            cidadesFiltradas.add("Santana de Parnaíba");
+        }
+        if (checkBoxMedio.isChecked()) {
+            cidadesFiltradas.add("Santana de Parnaíba");
+
+        }
+        if (checkBoxPequeno.isChecked()) {
+            cidadesFiltradas.add("Santana de Parnaíba");
+
+        }
+        if (checkBoxPequeno.isChecked()) {
+            cidadesFiltradas.add("Pirapora do Bom Jesus");
+
+        }
+
+
+
 
         atualizarSpinner();
     }
