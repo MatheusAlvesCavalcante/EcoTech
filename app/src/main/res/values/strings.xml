@@ -22,6 +22,28 @@
     <string name="neighborhood_5">Bairro: Jardim das Flores </string>
     <string name="view_details5">Ver detalhes</string>
 
+    <string name="point_of_collection_6">Ponto de Coleta Centro </string>
+    <string name="neighborhood_6">Bairro: Centro </string>
+    <string name="view_details6">Ver detalhes</string>
+
+    <string name="point_of_collection_7">Ponto de Coleta Tamboré </string>
+    <string name="neighborhood_7">Bairro: Tamboré </string>
+    <string name="view_details7">Ver detalhes</string>
+
+    <string name="point_of_collection_8">Ponto de Coleta Aldeia da Serra </string>
+    <string name="neighborhood_8">Bairro: Aldeia da Serra </string>
+    <string name="view_details8">Ver detalhes</string>
+
+    <string name="point_of_collection_9">Ponto de Coleta Jardim Maria Beatriz </string>
+    <string name="neighborhood_9">Bairro: Jardim Maria Beatriz </string>
+    <string name="view_details9">Ver detalhes</string>
+
+    <string name="point_of_collection_10">Ponto de Coleta Vila Nova </string>
+    <string name="neighborhood_10">Bairro: Vila Nova </string>
+    <string name="view_details10">Ver detalhes</string>
+
+
+
     <string name="texto3">Nosso aplicativo é especialmente dedicado aos moradores e empresas de Barueri, Carapicuíba, Itapevi, Jandira, Osasco, Pirapora do Bom Jesus e Santana de Parnaíba. Trabalhamos incansavelmente para garantir que você encontre o eco-ponto mais próximo de você, tornando o descarte de resíduos eletrônicos uma tarefa simples e acessível.</string>
     <string name="texto1">Nosso aplicativo foi criado com um propósito em mente: facilitar a vida dos moradores e empresas da Sub-Região Oeste da Grande São Paulo na hora de descartar seus resíduos eletrônicos de maneira responsável e sustentável.</string>
     <string name="bem_vindo">Bem-vindo ao App EcoTech!</string>

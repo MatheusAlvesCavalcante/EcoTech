@@ -109,63 +109,34 @@ public class ListaEcoPontos extends AppCompatActivity {
     private void filtrarCidades() {
         cidadesFiltradas = new ArrayList<>();
 
-        if (checkBoxPequeno.isChecked()) {
+        if (checkBoxPequeno.isChecked() | checkBoxMedio.isChecked()) {
             cidadesFiltradas.add("Osasco");
 
         }
-        if (checkBoxMedio.isChecked()) {
-            cidadesFiltradas.add("Osasco");
 
-        }
-        if (checkBoxGrande.isChecked()) {
-            cidadesFiltradas.add("Carapicuíba");
-        }
-        if (checkBoxMedio.isChecked()) {
+        if (checkBoxPequeno.isChecked() | checkBoxMedio.isChecked() | checkBoxGrande.isChecked()) {
             cidadesFiltradas.add("Carapicuíba");
 
         }
-        if (checkBoxPequeno.isChecked()) {
-            cidadesFiltradas.add("Carapicuíba");
+        if (checkBoxPequeno.isChecked()  | checkBoxMedio.isChecked() | checkBoxGrande.isChecked()) {
+            cidadesFiltradas.add("Barueri");
+        }
 
-        }
-        if (checkBoxPequeno.isChecked()) {
-            cidadesFiltradas.add("Barueri");
-        }
-        if (checkBoxMedio.isChecked()) {
-            cidadesFiltradas.add("Barueri");
-        }
-        if (checkBoxGrande.isChecked()) {
-            cidadesFiltradas.add("Barueri");
-        }
-        if (checkBoxMedio.isChecked()) {
-            cidadesFiltradas.add("Itapevi");
-        }
-        if (checkBoxPequeno.isChecked()) {
+        if (checkBoxPequeno.isChecked() | checkBoxMedio.isChecked()) {
             cidadesFiltradas.add("Itapevi");
         }
 
-        if (checkBoxMedio.isChecked()) {
-            cidadesFiltradas.add("Jandira");
-        }
-        if (checkBoxPequeno.isChecked()) {
-            cidadesFiltradas.add("Jandira");
-        }
-        if (checkBoxGrande.isChecked()) {
-            cidadesFiltradas.add("Santana de Parnaíba");
-        }
-        if (checkBoxMedio.isChecked()) {
-            cidadesFiltradas.add("Santana de Parnaíba");
+        if (checkBoxPequeno.isChecked() | checkBoxMedio.isChecked()) {
+        cidadesFiltradas.add("Jandira");
 
         }
-        if (checkBoxPequeno.isChecked()) {
-            cidadesFiltradas.add("Santana de Parnaíba");
 
+        if (checkBoxGrande.isChecked() | checkBoxMedio.isChecked() | checkBoxGrande.isChecked() ) {
+            cidadesFiltradas.add("Santana de Parnaíba");
         }
         if (checkBoxPequeno.isChecked()) {
             cidadesFiltradas.add("Pirapora do Bom Jesus");
-
         }
-
 
 
 
