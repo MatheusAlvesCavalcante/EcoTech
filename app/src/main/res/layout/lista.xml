@@ -45,21 +45,21 @@
             android:gravity="center"
             android:layout_marginBottom="16dp"> <!-- Adicionando margem inferior para separar do Spinner -->
 
-            <CheckBox
+            <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/checkboxPequeno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pequeno"
                 android:layout_marginEnd="16dp" /> <!-- Adicionando margem à direita -->
 
-            <CheckBox
+            <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/checkboxMedio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Médio"
                 android:layout_marginEnd="16dp" /> <!-- Adicionando margem à direita -->
 
-            <CheckBox
+            <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/checkboxGrande"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                 android:layout_marginEnd="16dp" /> <!-- Adicionando margem à direita -->
         </LinearLayout>
 
-        <Spinner
+        <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spinnerCidade"
             android:layout_width="376dp"
             android:layout_height="58dp"
@@ -91,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local" />
@@ -103,14 +103,14 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood"
                 android:textColor="#666"
                 android:textSize="14sp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection"
@@ -118,7 +118,7 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -158,14 +158,14 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_2"
                 android:textColor="#666"
                 android:textSize="14sp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_2"
@@ -173,7 +173,7 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local3" />
@@ -213,14 +213,14 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_3"
                 android:textColor="#666"
                 android:textSize="14sp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_3"
@@ -228,7 +228,7 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -256,7 +256,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local4" />
@@ -268,14 +268,14 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_4"
                 android:textColor="#666"
                 android:textSize="14sp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_4"
@@ -283,7 +283,7 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -310,7 +310,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collection_point_4">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local5"
@@ -324,7 +324,7 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_5"
@@ -333,7 +333,7 @@
                 tools:layout_editor_absoluteX="159dp"
                 tools:layout_editor_absoluteY="657dp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_5"
@@ -344,7 +344,7 @@
         </LinearLayout>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -373,7 +373,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collection_point_5">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local5"
@@ -387,7 +387,7 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_6"
@@ -396,7 +396,7 @@
                 tools:layout_editor_absoluteX="159dp"
                 tools:layout_editor_absoluteY="657dp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_6"
@@ -407,7 +407,7 @@
         </LinearLayout>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -436,7 +436,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collection_point_6">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local5"
@@ -450,7 +450,7 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_7"
@@ -459,7 +459,7 @@
                 tools:layout_editor_absoluteX="159dp"
                 tools:layout_editor_absoluteY="657dp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_7"
@@ -470,7 +470,7 @@
         </LinearLayout>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -498,7 +498,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collection_point_7">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local5"
@@ -512,7 +512,7 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_8"
@@ -521,7 +521,7 @@
                 tools:layout_editor_absoluteX="159dp"
                 tools:layout_editor_absoluteY="657dp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_8"
@@ -532,7 +532,7 @@
         </LinearLayout>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -561,7 +561,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collection_point_8">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local5"
@@ -575,7 +575,7 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_9"
@@ -584,7 +584,7 @@
                 tools:layout_editor_absoluteX="159dp"
                 tools:layout_editor_absoluteY="657dp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_9"
@@ -595,7 +595,7 @@
         </LinearLayout>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -623,7 +623,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collection_point_9">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="53dp"
             android:layout_height="55dp"
             android:src="@drawable/local5"
@@ -637,7 +637,7 @@
             android:orientation="vertical"
             android:paddingLeft="8dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/neighborhood_10"
@@ -646,7 +646,7 @@
                 tools:layout_editor_absoluteX="159dp"
                 tools:layout_editor_absoluteY="657dp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point_of_collection_10"
@@ -657,7 +657,7 @@
         </LinearLayout>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_details10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

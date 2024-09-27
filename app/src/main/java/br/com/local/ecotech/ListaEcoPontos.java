@@ -1,6 +1,10 @@
 package br.com.local.ecotech;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatCheckBox;
+import androidx.appcompat.widget.AppCompatSpinner;
+
 import android.app.AlertDialog;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -18,8 +22,8 @@ import java.util.List;
 
 public class ListaEcoPontos extends AppCompatActivity {
 
-    Spinner spinnerCidade;
-    CheckBox checkBoxPequeno, checkBoxMedio, checkBoxGrande;
+    AppCompatSpinner spinnerCidade;
+    AppCompatCheckBox checkBoxPequeno, checkBoxMedio, checkBoxGrande;
     String[] listaCidades = {
             "Selecione a Cidade",
             "Carapicuíba",
@@ -33,7 +37,7 @@ public class ListaEcoPontos extends AppCompatActivity {
 
     List<String> cidadesFiltradas;
     LinearLayout collectionPoint1, collectionPoint2, collectionPoint3, collectionPoint4, collectionPoint5;
-    Button btnDetalhes1, btnDetalhes2, btnDetalhes3, btnDetalhes4, btnDetalhes5;
+    AppCompatButton btnDetalhes1, btnDetalhes2, btnDetalhes3, btnDetalhes4, btnDetalhes5;
 
     @SuppressLint("MissingInflatedId")
     @Override

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class ImportanciaREC extends AppCompatActivity {
     @Override
@@ -13,7 +14,7 @@ public class ImportanciaREC extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.importancia_rec);
 
-        Button abrindo_tela_home = findViewById(R.id.btn_bem_vindo);
+        AppCompatButton abrindo_tela_home = findViewById(R.id.btn_bem_vindo);
         abrindo_tela_home.setOnClickListener(new View.OnClickListener() {
 
             @Override

@@ -24,8 +24,8 @@ public class ConexaoBD {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
             // >>>>>>>>>>>>>> Conexão com SQL Server Local <<<<<<<<<<<<<<
-            conn= DriverManager.getConnection("jdbc:jtds:sqlserver://172.19.2.233;"+
-                    "databaseName=myCafeteria2f;user=sa;password=@ITB123456;");
+            conn= DriverManager.getConnection("jdbc:jtds:sqlserver://bd_EcoTech.mssql.somee.com;"+
+                    "databaseName=bd_EcoTech;user=ecotech;password=ecotech123;");
             System.out.println("Conectado com sucesso ao SQL Server local!");
 
         } catch (SQLException e) { // SQLException

@@ -6,13 +6,15 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
 public class GrupoRes extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grupo_res);
 
-        Button abrindo_tela_home = findViewById(R.id.btn_bem_vindo);
+        AppCompatButton abrindo_tela_home = findViewById(R.id.btn_bem_vindo);
 
         abrindo_tela_home.setOnClickListener(new View.OnClickListener() {
 
@@ -23,7 +25,7 @@ public class GrupoRes extends AppCompatActivity  {
             }
         });
 
-        Button abrindo_tela_lista = findViewById(R.id.btn_tela_lista1);
+        AppCompatButton abrindo_tela_lista = findViewById(R.id.btn_tela_lista1);
 
         abrindo_tela_lista.setOnClickListener(new View.OnClickListener() {
 

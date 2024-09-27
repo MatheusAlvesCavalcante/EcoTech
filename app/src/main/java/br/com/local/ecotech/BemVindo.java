@@ -1,6 +1,7 @@
 package br.com.local.ecotech;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ public class BemVindo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bemvindo);
 
-        Button abrindo_tela_home = findViewById(R.id.btn_bem_vindo1);
+        AppCompatButton abrindo_tela_home = findViewById(R.id.btn_bem_vindo1);
 
         abrindo_tela_home.setOnClickListener(new View.OnClickListener() {
 

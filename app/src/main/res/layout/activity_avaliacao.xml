@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Avaliacao">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tituloAvaliacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avaliações do App"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tituloFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avalie-nos"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_nome"
+            android:layout_width="378dp"
+            android:layout_height="63dp"
+            android:hint="Nome" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="378dp"
+            android:layout_height="71dp"
+            android:hint="Email" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Avaliação"
+            android:layout_marginTop="16dp"/>
+
+        <ListView
+            android:id="@+id/listViewAvaliacoes"
+            android:layout_width="match_parent"
+            android:layout_height="419dp"
+            android:layout_marginTop="16dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

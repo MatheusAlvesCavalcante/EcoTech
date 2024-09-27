@@ -7,7 +7,7 @@
     tools:context=".Home"
     android:background="@color/white">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img"
         android:layout_width="156dp"
         android:layout_height="142dp"
@@ -17,6 +17,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_estrela"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_star"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
@@ -72,7 +80,7 @@
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints,OnClick" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView3"
         android:layout_width="87dp"
         android:layout_height="27dp"

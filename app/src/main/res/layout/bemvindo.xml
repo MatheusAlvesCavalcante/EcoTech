@@ -22,7 +22,7 @@
             android:padding="20dp"
             android:text="." />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="37dp"
             android:layout_gravity="center_horizontal"
@@ -34,7 +34,7 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="67dp"
             android:layout_gravity="center_horizontal"
@@ -43,7 +43,7 @@
             android:padding="8dp"
             android:text="@string/texto1" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -52,7 +52,7 @@
             android:padding="8dp"
             android:text="@string/texto2" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -61,7 +61,7 @@
             android:padding="8dp"
             android:text="@string/texto3" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -70,7 +70,7 @@
             android:padding="8dp"
             android:text="@string/texto4" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
