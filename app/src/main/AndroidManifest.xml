@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Teste"
+            android:exported="false" />
+        <activity
             android:name=".Avaliacao"
             android:exported="false" />
         <activity
