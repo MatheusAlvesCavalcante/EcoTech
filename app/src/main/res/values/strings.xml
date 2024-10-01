@@ -67,8 +67,24 @@
     <string name="texto_rec6">Televisores (telas maiores que 32 polegadas), refrigeradores, freezers, máquinas de lavar, secar, forno de Micro-ondas, ar-condicionado, Home Theater, impressoras de grande formato.</string>
     <string name="continuar">Continuar</string>
     <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
     <string name="title_produtos">Produtos</string>
     <string name="title_login">Login</string>
+    <string name="codigo">Código</string>
+    <string name="descricao">Descrição</string>
+    <string name="quantidade">Qtde</string>
+    <string name="valor_unitario">Valor Unit</string>
+    <string name="status">Situação</string>
+    <string name="ativo">Ativo</string>
+
+
+
+
+
+
+
+
     <string-array name="cidades_array">
         <item>São Paulo</item>
         <item>Osasco</item>
