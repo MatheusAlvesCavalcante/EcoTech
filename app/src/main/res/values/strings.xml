@@ -77,6 +77,8 @@
     <string name="valor_unitario">Valor Unit</string>
     <string name="status">Situação</string>
     <string name="ativo">Ativo</string>
+    <string name="disponivel">Disponível</string>
+    <string name="indisponivel">Indisponível</string>
 
 
 
