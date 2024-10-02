@@ -1,11 +1,19 @@
 package br.com.local.ecotech;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatCheckBox;
 import androidx.appcompat.widget.AppCompatSpinner;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
+import android.content.Context;
+import android.util.AttributeSet;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
@@ -19,6 +27,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.local.ecotech.placeholder.ProdutoContent;
 
 public class ListaEcoPontos extends AppCompatActivity {
 
@@ -39,6 +49,8 @@ public class ListaEcoPontos extends AppCompatActivity {
     LinearLayout collectionPoint1, collectionPoint2, collectionPoint3, collectionPoint4, collectionPoint5;
     AppCompatButton btnDetalhes1, btnDetalhes2, btnDetalhes3, btnDetalhes4, btnDetalhes5;
 
+    private ProdutoFragment.OnListFragmentInteractionListener mListener;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,16 +63,18 @@ public class ListaEcoPontos extends AppCompatActivity {
         checkBoxGrande = findViewById(R.id.checkboxGrande);
 
         collectionPoint1 = findViewById(R.id.collection_point_1);
-        collectionPoint2 = findViewById(R.id.collection_point_2);
-        collectionPoint3 = findViewById(R.id.collection_point_3);
-        collectionPoint4 = findViewById(R.id.collection_point_4);
-        collectionPoint5 = findViewById(R.id.collection_point_5);
+//        collectionPoint2 = findViewById(R.id.collection_point_2);
+//        collectionPoint3 = findViewById(R.id.collection_point_3);
+//        collectionPoint4 = findViewById(R.id.collection_point_4);
+//        collectionPoint5 = findViewById(R.id.collection_point_5);
 
         btnDetalhes1 = findViewById(R.id.view_details);
-        btnDetalhes2 = findViewById(R.id.view_details2);
-        btnDetalhes3 = findViewById(R.id.view_details3);
-        btnDetalhes4 = findViewById(R.id.view_details4);
-        btnDetalhes5 = findViewById(R.id.view_details5);
+//        btnDetalhes2 = findViewById(R.id.view_details2);
+//        btnDetalhes3 = findViewById(R.id.view_details3);
+//        btnDetalhes4 = findViewById(R.id.view_details4);
+//        btnDetalhes5 = findViewById(R.id.view_details5);
+
+
 
         setupDetailsButtons();
 
@@ -84,6 +98,12 @@ public class ListaEcoPontos extends AppCompatActivity {
 
             }
         });
+
+        RecyclerView recyclerView = findViewById(R.id.lista_itens);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
+        recyclerView.setAdapter(new MyProdutoRecyclerViewAdapter(ProdutoContent.ITEMS, mListener));
+
+
     }
 
     private void setupDetailsButtons() {
@@ -161,23 +181,24 @@ public class ListaEcoPontos extends AppCompatActivity {
         if (cidade.equals("Selecione a Cidade")) {
             mostrarTodosPontosDeColeta();
         }  else {
-            collectionPoint1.setVisibility(collectionPoint1.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
-            collectionPoint2.setVisibility(collectionPoint2.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
-            collectionPoint3.setVisibility(collectionPoint3.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
-            collectionPoint4.setVisibility(collectionPoint4.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
-            collectionPoint5.setVisibility(collectionPoint5.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
+//            collectionPoint1.setVisibility(collectionPoint1.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
+//            collectionPoint2.setVisibility(collectionPoint2.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
+//            collectionPoint3.setVisibility(collectionPoint3.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
+//            collectionPoint4.setVisibility(collectionPoint4.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
+//            collectionPoint5.setVisibility(collectionPoint5.getTag().equals(cidade) ? View.VISIBLE : View.GONE);
         }
     }
 
     private void mostrarTodosPontosDeColeta() {
-        collectionPoint1.setVisibility(View.VISIBLE);
-        collectionPoint2.setVisibility(View.VISIBLE);
-        collectionPoint3.setVisibility(View.VISIBLE);
-        collectionPoint4.setVisibility(View.VISIBLE);
-        collectionPoint5.setVisibility(View.VISIBLE);
+//        collectionPoint1.setVisibility(View.VISIBLE);
+//        collectionPoint2.setVisibility(View.VISIBLE);
+//        collectionPoint3.setVisibility(View.VISIBLE);
+//        collectionPoint4.setVisibility(View.VISIBLE);
+//        collectionPoint5.setVisibility(View.VISIBLE);
 
 
 
 
     }
+
 }

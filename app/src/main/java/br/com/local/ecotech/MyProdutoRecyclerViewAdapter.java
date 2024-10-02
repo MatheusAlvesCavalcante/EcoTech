@@ -1,11 +1,16 @@
 package br.com.local.ecotech;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Switch;
+
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import br.com.local.ecotech.ProdutoFragment.OnListFragmentInteractionListener;
 import br.com.local.ecotech.placeholder.ProdutoContent.ProdutoItem;
 import java.util.List;
@@ -17,6 +22,9 @@ import java.util.List;
 public class MyProdutoRecyclerViewAdapter extends
         RecyclerView.Adapter<MyProdutoRecyclerViewAdapter.ViewHolder> {
 
+    private final List<ProdutoItem> mValues;
+    private final OnListFragmentInteractionListener mListener;
+
     public MyProdutoRecyclerViewAdapter(List<ProdutoItem> items,
                                         OnListFragmentInteractionListener listener) {
         mValues = items;
@@ -26,7 +34,7 @@ public class MyProdutoRecyclerViewAdapter extends
     public ViewHolder onCreateViewHolder(ViewGroup parent, int
             viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_produto, parent, false);
+                .inflate(R.layout.lista, parent, false);
         return new ViewHolder(view);
     }
     @Override
@@ -37,16 +45,11 @@ public class MyProdutoRecyclerViewAdapter extends
 
         holder.mDescricaoView.setText(mValues.get(position).descricao);
         holder.mQtdeView.setText(mValues.get(position).qtde);
-        holder.mValorView.setText(mValues.get(position).valor_unit);
-        holder.mStatusView.setChecked(true);
-        holder.mView.setOnClickListener(new View.OnClickListener() {
+               holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (null != mListener) {
-                    // Notify the active callbacks interface (the
-                    activity, if the
-                    // fragment is attached to one) that an item has
-                    been selected.
+                    // Notify the active callbacks interface (th activity, if the fragment is attached to one) that an item has been selected.
                     mListener.onListFragmentInteraction(holder.mItem);
                 }
             }
@@ -58,26 +61,23 @@ public class MyProdutoRecyclerViewAdapter extends
     }
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
-        public final TextView mCodigoView;
-        public final TextView mDescricaoView;
-        public final TextView mQtdeView;
-        public final TextView mValorView;
-        public final Switch mStatusView;
+        public final AppCompatTextView mCodigoView;
+        public final AppCompatTextView mDescricaoView;
+        public final AppCompatButton mQtdeView;
+        public final AppCompatImageButton mValorView;
         public ProdutoItem mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mCodigoView = (TextView)
-                    view.findViewById(R.id.codigo_produto);
-            mDescricaoView = (TextView)
-                    view.findViewById(R.id.descricao_produto);
-            mQtdeView = (TextView)
-                    view.findViewById(R.id.quantidade_produto);
-            mValorView = (TextView)
-                    view.findViewById(R.id.valor_produto);
-            mStatusView = (Switch)
-                    view.findViewById(R.id.status_produto);
+            mCodigoView = (AppCompatTextView)
+                    view.findViewById(R.id.nome);
+            mDescricaoView = (AppCompatTextView)
+                    view.findViewById(R.id.bairro);
+            mQtdeView = (AppCompatButton)
+                    view.findViewById(R.id.view_details);
+            mValorView = (AppCompatImageButton)
+                    view.findViewById(R.id.imagem_perfil);
         }
         @Override
         public String toString() {
