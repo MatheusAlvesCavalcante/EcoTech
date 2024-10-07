@@ -18,8 +18,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Teste"
-            android:exported="false" />
+            android:name=".DetalhesActivity"
+            android:exported="true"
+            android:label="@string/title_activity_detalhes"
+            android:theme="@style/Theme.EcoTech" />
         <activity
             android:name=".Avaliacao"
             android:exported="false" />
@@ -34,7 +36,7 @@
             android:exported="true" />
         <activity
             android:name=".ListaEcoPontos"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Home"
             android:exported="true" />

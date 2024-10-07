@@ -81,12 +81,6 @@
     <string name="indisponivel">Indisponível</string>
 
 
-
-
-
-
-
-
     <string-array name="cidades_array">
         <item>São Paulo</item>
         <item>Osasco</item>
@@ -94,4 +88,5 @@
         <item>Carapicuíba</item>
         <item>Itapevi</item>
     </string-array>
+    <string name="title_activity_detalhes">DetalhesActivity</string>
 </resources>

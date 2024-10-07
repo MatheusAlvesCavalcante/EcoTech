@@ -1,34 +1,28 @@
 package br.com.local.ecotech;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatCheckBox;
 import androidx.appcompat.widget.AppCompatSpinner;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.util.AttributeSet;
-import android.widget.Button;
-import android.widget.CheckBox;
+import android.content.Intent;
 import android.widget.LinearLayout;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.local.ecotech.placeholder.ProdutoContent;
+import br.com.local.ecotech.placeholder.EcoPontoConexao;
+import br.com.local.ecotech.placeholder.EcoPontoModel;
 
 public class ListaEcoPontos extends AppCompatActivity {
 
@@ -49,7 +43,7 @@ public class ListaEcoPontos extends AppCompatActivity {
     LinearLayout collectionPoint1, collectionPoint2, collectionPoint3, collectionPoint4, collectionPoint5;
     AppCompatButton btnDetalhes1, btnDetalhes2, btnDetalhes3, btnDetalhes4, btnDetalhes5;
 
-    private ProdutoFragment.OnListFragmentInteractionListener mListener;
+    private OnListFragmentInteractionListener mListener;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -76,9 +70,9 @@ public class ListaEcoPontos extends AppCompatActivity {
 
 
 
-        setupDetailsButtons();
+       // setupDetailsButtons();
 
-        preencherCidade();
+       // preencherCidade();
 
         checkBoxPequeno.setOnClickListener(v -> filtrarCidades());
         checkBoxMedio.setOnClickListener(v -> filtrarCidades());
@@ -101,27 +95,13 @@ public class ListaEcoPontos extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.lista_itens);
         recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
-        recyclerView.setAdapter(new MyProdutoRecyclerViewAdapter(ProdutoContent.ITEMS, mListener));
+        // todo - carregar produtos do banco de dados
+        recyclerView.setAdapter(new MyEcoPontoRecyclerViewAdapter(EcoPontoConexao.pesquisarEcoPontos(getApplicationContext()), mListener));
+
 
 
     }
 
-    private void setupDetailsButtons() {
-        btnDetalhes1.setOnClickListener(v -> mostrarDetalhes("Ecoponto Alphaville, Coleta seletiva de resíduos eletrônicos, Rua das Árvores, 123, 06410000, 123, Alphaville, Barueri, SP,Próximo ao shopping, (11) 1234-5678, Seg-Sex: 08:00-18:00"));
-        btnDetalhes2.setOnClickListener(v -> mostrarDetalhes("Ecoponto Vila Cretti, Coleta seletiva de resíduos eletrônicos, Avenida dos Rios 456, 06345000, 456, Vila Cretti, Carapicuíba, SP, Próximo ao centro comercial, (11) 2345-6789, Seg-Sex: 09:00-19:00"));
-        btnDetalhes3.setOnClickListener(v -> mostrarDetalhes("Ecoponto Amador Bueno, Coleta seletiva de resíduos eletrônicos, Rua das Flores, 789, 06677000, 789, Amador Bueno, Itapevi, SP, Próximo à estação de trem, (11) 3456-7890, Seg-Sex: 07:00-17:00"));
-        btnDetalhes4.setOnClickListener(v -> mostrarDetalhes("Ecoponto Jardim Alvorada, Coleta seletiva de resíduos eletrônicos, Avenida das Aves, 1011, 06600000, 1011, Jardim Alvorada, Jandira, SP, Próximo ao centro de saúde, (11) 4567-8901, Seg-Sex: 10:00-20:00"));
-        btnDetalhes5.setOnClickListener(v -> mostrarDetalhes("Ecoponto Jardim das Flores, Coleta seletiva de resíduos eletrônicos, Rua dos Lagos, 1213, 06000000, 1213, Jardim das Flores, Osasco, SP, Próximo ao parque, (11) 3456-7890, Seg-Sex: 07:00-17:00"));
-    }
-
-    private void mostrarDetalhes(String detalhes) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Detalhes do Ponto de Coleta");
-        builder.setMessage(detalhes);
-        builder.setPositiveButton("OK", (dialog, which) -> dialog.dismiss());
-        AlertDialog dialog = builder.create();
-        dialog.show();
-    }
 
     private void preencherCidade() {
         spinnerCidade.setAdapter(new ArrayAdapter<>(
@@ -197,8 +177,7 @@ public class ListaEcoPontos extends AppCompatActivity {
 //        collectionPoint5.setVisibility(View.VISIBLE);
 
 
-
-
     }
+
 
 }

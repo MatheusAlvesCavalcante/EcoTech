@@ -94,7 +94,7 @@ public class Avaliacao extends AppCompatActivity {
             pst.setString(2, email);
             pst.setInt(3, (int) avaliacao);
             pst.executeUpdate();
-            Toast.makeText(getApplicationContext(), "USUÁRIO INSERIDO COM SUCESSO!",
+            Toast.makeText(getApplicationContext(), "AVALIAÇÃO ENVIADA COM SUCESSO!",
             Toast.LENGTH_SHORT).show();
         }catch(SQLException e){
             Toast.makeText(getApplicationContext(), e.getMessage(),
