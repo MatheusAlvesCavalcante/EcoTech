@@ -31,8 +31,9 @@ public class ConexaoBD {
         } catch (SQLException e) { // SQLException
 
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            e.printStackTrace();q
         }
         return conn;
     }
 }
+q
