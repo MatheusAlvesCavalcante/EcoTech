@@ -78,27 +78,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_container"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toBottomOf="@id/checkbox_container">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/lista_itens"
-                android:name="br.com.local.ecotech.ProdutoFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layoutManager="LinearLayoutManager"
-                tools:context=".ProdutoFragment"
-                tools:listitem="@layout/fragment_produto" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista_itens"
+            android:name="br.com.local.ecotech.ProdutoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".ProdutoFragment"
+            tools:listitem="@layout/fragment_produto" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

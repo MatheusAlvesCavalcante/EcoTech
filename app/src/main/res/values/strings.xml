@@ -81,6 +81,12 @@
     <string name="indisponivel">Indisponível</string>
 
 
+
+    <string name="endereco">Endereço:</string>
+    <string name="horario">Horário de funcionamento:</string>
+    <string name="grupo_aceito">GRUPO DE RESÍDUOS ACEITOS:</string>
+
+
     <string-array name="cidades_array">
         <item>São Paulo</item>
         <item>Osasco</item>
