@@ -44,12 +44,12 @@
             android:id="@+id/ratingBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:indeterminate="false"
-            android:isIndicator="false"
-            android:max="5"
             android:numStars="5"
+            android:max="5"
+            android:stepSize="1"
             android:rating="0"
-            android:stepSize="1" />
+            android:indeterminate="false"
+            android:isIndicator="false" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_enviar"
@@ -63,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="419dp"
             android:layout_marginTop="16dp" />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 

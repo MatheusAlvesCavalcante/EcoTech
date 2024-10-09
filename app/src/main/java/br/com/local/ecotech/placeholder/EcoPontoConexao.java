@@ -34,4 +34,29 @@ public class EcoPontoConexao {
         }
         return  ecoPontos;
     }
+
+    public static List<EcoPontoModel> pesquisarEcoPontos(int tipoResiduo, String cidade, Context context){
+        List<EcoPontoModel> ecoPontos = new ArrayList<>();
+        try{
+            PreparedStatement pst =
+                    ConexaoBD.conectar().prepareStatement("select bairro, nome from EcoPonto where gruporesiduo_id = ? and cidade = ?");
+
+            pst.setInt(1, tipoResiduo);
+            pst.setString(2, cidade);
+
+            ResultSet res = pst.executeQuery();
+
+            while(res.next()){
+                ecoPontos.add(new EcoPontoModel(
+                        res.getString(1),
+                        res.getString(2)
+                ));
+            }
+
+        }catch(SQLException e){
+            Toast.makeText(context, e.getMessage(),
+                    Toast.LENGTH_SHORT).show();
+        }
+        return  ecoPontos;
+    }
 }

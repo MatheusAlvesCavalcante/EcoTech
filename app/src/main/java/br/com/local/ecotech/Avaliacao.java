@@ -92,7 +92,7 @@ public class Avaliacao extends AppCompatActivity {
 
             pst.setString(1, nome);
             pst.setString(2, email);
-            pst.setInt(3, (int) avaliacao);
+            pst.setFloat(3, avaliacao);
             pst.executeUpdate();
             Toast.makeText(getApplicationContext(), "AVALIAÇÃO ENVIADA COM SUCESSO!",
             Toast.LENGTH_SHORT).show();
@@ -102,5 +102,5 @@ public class Avaliacao extends AppCompatActivity {
         }
     }
 }
-q
+
 
