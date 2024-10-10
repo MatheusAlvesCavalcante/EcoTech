@@ -69,4 +69,5 @@
             android:textSize="13sp"
             app:iconTint="#20F7FAF7" />
     </LinearLayout>
+
 </LinearLayout>
