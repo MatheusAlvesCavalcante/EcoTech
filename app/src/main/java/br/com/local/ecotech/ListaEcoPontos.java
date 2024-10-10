@@ -43,7 +43,7 @@ public class ListaEcoPontos extends AppCompatActivity {
     LinearLayout collectionPoint1, collectionPoint2, collectionPoint3, collectionPoint4, collectionPoint5;
     AppCompatButton btnDetalhes1, btnDetalhes2, btnDetalhes3, btnDetalhes4, btnDetalhes5;
 
-    private OnListFragmentInteractionListener mListener;
+    private ListaEcoPontos.OnListFragmentInteractionListener mListener;
     List<EcoPontoModel> listagem;
     RecyclerView recyclerView;
 
@@ -243,6 +243,11 @@ public class ListaEcoPontos extends AppCompatActivity {
 //
 //
 //    }
+
+    public interface OnListFragmentInteractionListener {
+        // TODO: Update argument type and name
+        void onListFragmentInteraction(EcoPontoModel item);
+    }
 
 
 }

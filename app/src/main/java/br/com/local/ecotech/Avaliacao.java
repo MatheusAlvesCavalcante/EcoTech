@@ -1,5 +1,6 @@
 package br.com.local.ecotech;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -12,6 +13,7 @@ import android.widget.RatingBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatEditText;
 import androidx.appcompat.widget.AppCompatRatingBar;
 
@@ -42,6 +44,7 @@ public class Avaliacao extends AppCompatActivity {
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, avaliacoes);
         listViewAvaliacoes.setAdapter(adapter);
 
+
         buttonEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +52,7 @@ public class Avaliacao extends AppCompatActivity {
             }
         });
     }
+
 
     private void validarCadastro() {
         String nome = editTextNome.getText().toString().trim();

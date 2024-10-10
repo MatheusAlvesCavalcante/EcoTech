@@ -20,11 +20,15 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/btn_estrela"
-        android:layout_width="34dp"
+        android:layout_width="50dp"
         android:layout_height="30dp"
         android:src="@drawable/ic_star"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="28dp" />
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"

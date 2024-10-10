@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import br.com.local.ecotech.placeholder.EcoPontoModel;
 
 
-public class MainActivity extends AppCompatActivity implements OnListFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements OnListFragmentInt
 
     }
 
-    @Override
+
     public void onListFragmentInteraction(EcoPontoModel item) {
         Intent it = new Intent(MainActivity.this, DetalhesActivity.class);
         startActivity(it);

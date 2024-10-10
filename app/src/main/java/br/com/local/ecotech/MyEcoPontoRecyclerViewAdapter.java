@@ -3,11 +3,14 @@ package br.com.local.ecotech;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import br.com.local.ecotech.placeholder.EcoPontoModel;
 
@@ -17,10 +20,10 @@ public class MyEcoPontoRecyclerViewAdapter extends
         RecyclerView.Adapter<MyEcoPontoRecyclerViewAdapter.ViewHolder> {
 
     private final List<EcoPontoModel> mValues;
-    private final OnListFragmentInteractionListener mListener;
+    private final ListaEcoPontos.OnListFragmentInteractionListener mListener;
 
     public MyEcoPontoRecyclerViewAdapter(List<EcoPontoModel> items,
-                                         OnListFragmentInteractionListener listener) {
+                                         ListaEcoPontos.OnListFragmentInteractionListener listener) {
         mValues = items;
         mListener = listener;
     }
@@ -45,6 +48,8 @@ public class MyEcoPontoRecyclerViewAdapter extends
             @Override
             public void onClick(View v) {
                 if (null != mListener) {
+                    Snackbar.make(v, "OLA", Snackbar.LENGTH_LONG);
+
                     mListener.onListFragmentInteraction(holder.mItem);
                 }
             }
@@ -53,8 +58,10 @@ public class MyEcoPontoRecyclerViewAdapter extends
 //            @Override
 //            public void onClick(View v) {
 //                if (null != mListener) {
+//
+//                    Toast.makeText(v.getContext(), "OLA", Toast.LENGTH_LONG);
 //                    // Notify the active callbacks interface (th activity, if the fragment is attached to one) that an item has been selected.
-//                    mListener.onListFragmentInteraction(holder.mItem);
+//                    // mListener.onListFragmentInteraction(holder.mItem);
 //                }
 //            }
 //        });
@@ -89,4 +96,6 @@ public class MyEcoPontoRecyclerViewAdapter extends
 
         }
     }
+
+
 }

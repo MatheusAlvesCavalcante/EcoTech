@@ -17,7 +17,7 @@ public class EcoPontoConexao {
         List<EcoPontoModel> ecoPontos = new ArrayList<>();
         try{
             PreparedStatement pst =
-                    ConexaoBD.conectar().prepareStatement("select bairro, nome, foto from EcoPonto");
+                    ConexaoBD.conectar().prepareStatement("select bairro, nome, foto from EcoPonto where statusPonto = 1");
 
             ResultSet res = pst.executeQuery();
 
@@ -40,17 +40,19 @@ public class EcoPontoConexao {
         List<EcoPontoModel> ecoPontos = new ArrayList<>();
         try{
             PreparedStatement pst =
-                    ConexaoBD.conectar().prepareStatement("select bairro, nome from EcoPonto where gruporesiduo_id = ? and cidade = ?");
+                    ConexaoBD.conectar().prepareStatement("select bairro, nome, foto from EcoPonto where gruporesiduo_id = ? and cidade = ? and statusPonto = 1");
 
             pst.setInt(1, tipoResiduo);
             pst.setString(2, cidade);
+
 
             ResultSet res = pst.executeQuery();
 
             while(res.next()){
                 ecoPontos.add(new EcoPontoModel(
                         res.getString(1),
-                        res.getString(2)
+                        res.getString(2),
+                        res.getBytes(3)
                 ));
             }
 
