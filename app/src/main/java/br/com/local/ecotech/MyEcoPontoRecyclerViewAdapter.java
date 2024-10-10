@@ -37,7 +37,9 @@ public class MyEcoPontoRecyclerViewAdapter extends
 
         holder.mBairroView.setText(mValues.get(position).bairro);
         holder.mNomeView.setText(mValues.get(position).nome);
-        //holder.mImagemPerfilView.setI(mValues.get(position).imagem_perfil);
+
+        if(mValues.get(position).foto != null)
+            holder.mImagemPerfilView.setImageBitmap(Util.converterByteToBipmap(mValues.get(position).foto));
 
         holder.mViewDetailsButton.setOnClickListener(new View.OnClickListener() {
             @Override

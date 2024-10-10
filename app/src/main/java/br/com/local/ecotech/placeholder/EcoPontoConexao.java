@@ -17,14 +17,15 @@ public class EcoPontoConexao {
         List<EcoPontoModel> ecoPontos = new ArrayList<>();
         try{
             PreparedStatement pst =
-                    ConexaoBD.conectar().prepareStatement("select bairro, nome from EcoPonto");
+                    ConexaoBD.conectar().prepareStatement("select bairro, nome, foto from EcoPonto");
 
             ResultSet res = pst.executeQuery();
 
             while(res.next()){
                 ecoPontos.add(new EcoPontoModel(
                         res.getString(1),
-                        res.getString(2)
+                        res.getString(2),
+                        res.getBytes(3)
                 ));
             }
 

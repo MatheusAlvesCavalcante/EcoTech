@@ -59,7 +59,7 @@
             android:background="@android:color/transparent"
             android:text="@string/view_details"
             android:textColor="#1E91ED"
-            android:textSize="14sp"
+            android:textSize="13sp"
             app:iconTint="#20F7FAF7" />
     </LinearLayout>
 </LinearLayout>
