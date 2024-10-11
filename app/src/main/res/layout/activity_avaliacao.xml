@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Avaliacao">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/seta"
-        style="@style/radius"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/ic_back_arrow"
-        android:onClick="voltando_tela_home"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,OnClick" />
-
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tituloAvaliacoes"
         android:layout_width="wrap_content"
