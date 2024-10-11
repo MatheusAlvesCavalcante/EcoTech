@@ -91,7 +91,7 @@
 
     <string name="endereco">Endereço:</string>
     <string name="horario">Horário de funcionamento:</string>
-    <string name="grupo_aceito">GRUPO DE RESÍDUOS ACEITOS:</string>
+    <string name="grupo_aceito">Grupo(s) de resíduo(s) aceito(s):</string>
 
 
     <string-array name="cidades_array">
