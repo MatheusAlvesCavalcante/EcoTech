@@ -1,5 +1,6 @@
 package br.com.local.ecotech;
 
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,9 +42,12 @@ public class MyEcoPontoRecyclerViewAdapter extends
         holder.mBairroView.setText(mValues.get(position).bairro);
         holder.mNomeView.setText(mValues.get(position).nome);
 
-        if(mValues.get(position).foto != null)
-            holder.mImagemPerfilView.setImageBitmap(Util.converterByteToBipmap(mValues.get(position).foto));
+        if(mValues.get(position).foto != null){
+            Bitmap imagemRecebida = Util.converterByteToBipmap(mValues.get(position).foto);
+            // todo - reduzir foto
 
+            holder.mImagemPerfilView.setImageBitmap(imagemRecebida);
+        }
         holder.mViewDetailsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
