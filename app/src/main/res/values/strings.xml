@@ -43,11 +43,18 @@
     <string name="view_details10">Ver detalhes</string>
 
 
-    <string name="texto3">Nosso aplicativo é especialmente dedicado aos moradores e empresas de Barueri, Carapicuíba, Itapevi, Jandira, Osasco, Pirapora do Bom Jesus e Santana de Parnaíba. Trabalhamos incansavelmente para garantir que você encontre o EcoPonto mais próximo de você, tornando o descarte de resíduos eletrônicos uma tarefa simples e acessível.</string>
-    <string name="texto1">Nosso aplicativo foi criado com um propósito em mente: facilitar a vida dos moradores e empresas da Sub-Região Oeste da Grande São Paulo na hora de descartar seus resíduos eletrônicos de maneira responsável e sustentável.</string>
+    <string name="texto3">Nosso aplicativo é especialmente dedicado aos moradores e empresas de Barueri, Carapicuíba, Itapevi,
+        Jandira, Osasco, Pirapora do Bom Jesus e Santana de Parnaíba. Trabalhamos incansavelmente para garantir que você encontre
+        o EcoPonto mais próximo de você, tornando o descarte de resíduos eletrônicos uma tarefa simples e acessível.</string>
+    <string name="texto1">Nosso aplicativo foi criado com um propósito em mente: facilitar a vida dos moradores e empresas
+        da Sub-Região Oeste da Grande São Paulo na hora de descartar seus resíduos eletrônicos de maneira responsável e sustentável.</string>
     <string name="bem_vindo">Bem-vindo ao App EcoTech!</string>
-    <string name="texto2">Sabemos que a correta destinação de resíduos eletrônicos é essencial para o meio ambiente e para a saúde pública. Por isso, desenvolvemos esta plataforma para conectar os usuários a ecopontos de coleta confiáveis e próximos, onde eles podem descartar seus eletrônicos de forma segura e consciente.</string>
-    <string name="texto4">Com o App EcoTech, você pode localizar facilmente os ecopontos de coleta mais próximos, obter informações sobre os tipos de resíduos aceitos em cada local e até mesmo receber notificações sobre eventos de coleta ou novos pontos de coleta na sua região. Junte-se a nós nessa jornada em prol do meio ambiente e da sustentabilidade.</string>
+    <string name="texto2">Sabemos que a correta destinação de resíduos eletrônicos é essencial para o meio ambiente e para a saúde pública.
+        Por isso, desenvolvemos esta plataforma para conectar os usuários a ecopontos de coleta confiáveis e próximos, onde eles podem descartar
+        seus eletrônicos de forma segura e consciente.</string>
+    <string name="texto4">Com o App EcoTech, você pode localizar facilmente os ecopontos de coleta mais próximos, obter informações sobre os tipos de
+        resíduos aceitos em cada local e até mesmo receber notificações sobre eventos de coleta ou novos pontos de coleta na sua região. Junte-se a nós
+        nessa jornada em prol do meio ambiente e da sustentabilidade.</string>
     <string name="texto5">Faça sua parte e ajude-nos a criar um futuro mais limpo e saudável para todos.</string>
     <string name="porque_reciclar">Porque reciclar resíduos eletônicos?</string>
     <string name="pontos_de_coleta">Pontos de Coleta</string>
