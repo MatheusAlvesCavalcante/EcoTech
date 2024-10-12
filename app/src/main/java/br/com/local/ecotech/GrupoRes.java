@@ -25,13 +25,13 @@ public class GrupoRes extends AppCompatActivity  {
             }
         });
 
-        AppCompatButton abrindo_tela_lista = findViewById(R.id.btn_tela_lista1);
+        AppCompatButton abrindo_tela_lista1 = findViewById(R.id.btn_tela_lista1);
 
-        abrindo_tela_lista.setOnClickListener(new View.OnClickListener() {
+        abrindo_tela_lista1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(GrupoRes.this,   ListaEcoPontos.class );
+                Intent intent = new Intent(GrupoRes.this,  ListaEcoPontos.class );
                 startActivity (intent);
             }
         });

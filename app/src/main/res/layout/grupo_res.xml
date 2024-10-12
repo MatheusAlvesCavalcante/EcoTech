@@ -169,7 +169,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_home2"
-        android:onClick="abrindo_tela_grupo_re"
+        android:onClick="abrindo_tela_lista1"
         android:text="@string/continuar"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -177,7 +177,7 @@
         app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        tools:ignore="MissingConstraints,OnClick" />
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

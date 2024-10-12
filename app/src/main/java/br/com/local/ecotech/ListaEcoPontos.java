@@ -53,6 +53,17 @@ public class ListaEcoPontos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista);
 
+        AppCompatButton abrindo_tela_home = findViewById(R.id.btn_bem_vindo2);
+
+        abrindo_tela_home.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ListaEcoPontos.this,   GrupoRes.class );
+                startActivity (intent);
+            }
+        });
+
        listagem = new ArrayList<>();
 
         spinnerCidade = findViewById(R.id.spinnerCidade);
