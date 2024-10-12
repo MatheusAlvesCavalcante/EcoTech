@@ -15,7 +15,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/ic_back_arrow"
-        android:onClick="abrindo_tela_lista"
+        android:onClick="abrindo_tela_home"
         android:padding="20dp"
         android:text="."
         app:layout_constraintBottom_toBottomOf="@+id/textView2"

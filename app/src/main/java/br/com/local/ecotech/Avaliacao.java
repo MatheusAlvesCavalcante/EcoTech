@@ -34,6 +34,18 @@ public class Avaliacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avaliacao);
 
+
+        AppCompatButton abrindo_tela_home = findViewById(R.id.btn_home2);
+
+        abrindo_tela_home.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(Avaliacao.this,   Home.class );
+                startActivity (intent);
+            }
+        });
+
         editTextNome = findViewById(R.id.edit_text_nome);
         editTextEmail = findViewById(R.id.edit_text_email);
         ratingBar = findViewById(R.id.ratingBar);
