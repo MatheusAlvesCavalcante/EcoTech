@@ -51,7 +51,7 @@ public class EcoPontoConexao {
         List<EcoPontoModel> ecoPontos = new ArrayList<>();
         try{
             PreparedStatement pst =
-                    ConexaoBD.conectar().prepareStatement("select bairro, nome, foto, cep, logradouro, numResid, telefone, horarioFunc from EcoPonto where gruporesiduo_id = ? and cidade = ? and statusPonto = 1");
+                    ConexaoBD.conectar().prepareStatement("select  bairro, nome, foto, cep, logradouro, numResid, telefone, horarioFunc from EcoPonto where gruporesiduo_id = ? and cidade = ? and statusPonto = 1");
 
             pst.setInt(1, tipoResiduo);
             pst.setString(2, cidade);
