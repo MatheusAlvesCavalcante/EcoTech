@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.view.MotionEvent;
 import android.widget.LinearLayout;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ public class ListaEcoPontos extends AppCompatActivity {
     AppCompatCheckBox checkBoxPequeno, checkBoxMedio, checkBoxGrande;
     String[] listaCidades = {
             "Selecione a Cidade",
+            "Todas as Cidades",
             "Carapicuíba",
             "Osasco",
             "Barueri",
@@ -46,6 +48,8 @@ public class ListaEcoPontos extends AppCompatActivity {
     private ListaEcoPontos.OnListFragmentInteractionListener mListener;
     List<EcoPontoModel> listagem;
     RecyclerView recyclerView;
+    private int posicao;
+    private long codigo;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -77,11 +81,6 @@ public class ListaEcoPontos extends AppCompatActivity {
 //        collectionPoint4 = findViewById(R.id.collection_point_4);
 //        collectionPoint5 = findViewById(R.id.collection_point_5);
 
-        btnDetalhes1 = findViewById(R.id.view_details);
-//        btnDetalhes2 = findViewById(R.id.view_details2);
-//        btnDetalhes3 = findViewById(R.id.view_details3);
-//        btnDetalhes4 = findViewById(R.id.view_details4);
-//        btnDetalhes5 = findViewById(R.id.view_details5);
 
 
 
@@ -91,6 +90,30 @@ public class ListaEcoPontos extends AppCompatActivity {
                 this,
                 R.layout.text_spinner, listaCidades
         ));
+
+        checkBoxPequeno.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                spinnerCidade.dispatchSetSelected(true);
+
+            }
+        });
+
+        checkBoxMedio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                spinnerCidade.dispatchSetSelected(true);
+
+            }
+        });
+
+        checkBoxGrande.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                spinnerCidade.dispatchSetSelected(true);
+
+            }
+        });
 
 //        checkBoxPequeno.setOnClickListener(v -> filtrarCidades());
 //        checkBoxMedio.setOnClickListener(v -> filtrarCidades());
@@ -113,7 +136,6 @@ public class ListaEcoPontos extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.lista_itens);
         recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
-        // todo - carregar produtos do banco de dados
 
         if(spinnerCidade.isSelected()){
             int tipoGrupo = filtrarGrupo();
@@ -125,6 +147,7 @@ public class ListaEcoPontos extends AppCompatActivity {
         recyclerView.setAdapter(new MyEcoPontoRecyclerViewAdapter(listagem, mListener));
 
 
+
         spinnerCidade.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -134,19 +157,24 @@ public class ListaEcoPontos extends AppCompatActivity {
 
                 int tipoGrupo = filtrarGrupo();
                 if(position==1)
-                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Carapicuíba", getApplicationContext());
+                    listagem = EcoPontoConexao.pesquisarEcoPontos(getApplicationContext());
                 else if(position==2)
-                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Osasco", getApplicationContext());
+                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Carapicuíba", getApplicationContext());
                 else if(position==3)
-                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Barueri", getApplicationContext());
+                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Osasco", getApplicationContext());
                 else if(position==4)
-                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Jandira", getApplicationContext());
+                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Barueri", getApplicationContext());
                 else if(position==5)
-                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Santana de Parnaíba", getApplicationContext());
+                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Jandira", getApplicationContext());
                 else if(position==6)
-                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Itapevi", getApplicationContext());
+                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Santana de Parnaíba", getApplicationContext());
                 else if(position==7)
+                    listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Itapevi", getApplicationContext());
+                else if(position==8)
                     listagem = EcoPontoConexao.pesquisarEcoPontos(tipoGrupo, "Pirapora do Bom Jesus", getApplicationContext());
+
+                posicao = position;
+                codigo = id;
 
                 MyEcoPontoRecyclerViewAdapter adapter = new MyEcoPontoRecyclerViewAdapter(listagem, mListener);
                 recyclerView.setAdapter(adapter);
@@ -165,18 +193,18 @@ public class ListaEcoPontos extends AppCompatActivity {
         boolean medio = checkBoxMedio.isChecked();
         boolean grande = checkBoxGrande.isChecked();
         int resultado = 0;
-        if(pequeno){
+        if(pequeno && medio && grande){
+            resultado= 5;
+        } else if(pequeno && medio){
+            resultado= 4;
+        } else if(medio && grande){
+            resultado= 6;
+        } else if(pequeno){
             resultado= 1;
         } else if(medio){
             resultado= 2;
         } else if(grande){
             resultado= 3;
-        } else if(pequeno && medio){
-            resultado= 4;
-        } else if(pequeno && medio && grande){
-            resultado= 5;
-        } else if(medio && grande){
-            resultado= 6;
         }
         return resultado;
     }

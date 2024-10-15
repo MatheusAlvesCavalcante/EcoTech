@@ -29,18 +29,23 @@ public class MyEcoPontoRecyclerViewAdapter extends
         mListener = listener;
     }
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int
+    public MyEcoPontoRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int
             viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.fragment_produto, parent, false);
-        return new ViewHolder(view);
+        return new MyEcoPontoRecyclerViewAdapter.ViewHolder(view);
     }
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final MyEcoPontoRecyclerViewAdapter.ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
 
         holder.mBairroView.setText(mValues.get(position).bairro);
         holder.mNomeView.setText(mValues.get(position).nome);
+        holder.mCepView.setText(mValues.get(position).cep);
+        holder.mLogradouroView.setText(mValues.get(position).logradouro);
+        holder.mNumResidView.setText(mValues.get(position).numResid);
+        holder.mTelefoneView.setText(mValues.get(position).telefone);
+        holder.mHorarioFuncView.setText(mValues.get(position).horarioFunc);
 
         if(mValues.get(position).foto != null){
             Bitmap imagemRecebida = Util.converterByteToBipmap(mValues.get(position).foto);
@@ -48,27 +53,18 @@ public class MyEcoPontoRecyclerViewAdapter extends
 
             holder.mImagemPerfilView.setImageBitmap(imagemRecebida);
         }
-        holder.mViewDetailsButton.setOnClickListener(new View.OnClickListener() {
+
+        holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (null != mListener) {
-                    Snackbar.make(v, "OLA", Snackbar.LENGTH_LONG);
 
+                    // Toast.makeText(v.getContext(), "OLA", Toast.LENGTH_LONG);
+                    // Notify the active callbacks interface (th activity, if the fragment is attached to one) that an item has been selected.
                     mListener.onListFragmentInteraction(holder.mItem);
                 }
             }
         });
-//        holder.mView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (null != mListener) {
-//
-//                    Toast.makeText(v.getContext(), "OLA", Toast.LENGTH_LONG);
-//                    // Notify the active callbacks interface (th activity, if the fragment is attached to one) that an item has been selected.
-//                    // mListener.onListFragmentInteraction(holder.mItem);
-//                }
-//            }
-//        });
     }
     @Override
     public int getItemCount() {
@@ -79,7 +75,12 @@ public class MyEcoPontoRecyclerViewAdapter extends
         public final AppCompatTextView mBairroView;
         public final AppCompatTextView mNomeView;
         public final AppCompatImageView mImagemPerfilView;
-        public final AppCompatButton mViewDetailsButton;
+        public final AppCompatTextView mCepView;
+        public final AppCompatTextView mLogradouroView;
+        public final AppCompatTextView mNumResidView;
+        public final AppCompatTextView mTelefoneView;
+        public final AppCompatTextView mHorarioFuncView;
+
         public EcoPontoModel mItem;
 
         public ViewHolder(View view) {
@@ -91,7 +92,12 @@ public class MyEcoPontoRecyclerViewAdapter extends
                     view.findViewById(R.id.nome);
             mImagemPerfilView = (AppCompatImageView)
                     view.findViewById(R.id.imagem_perfil);
-            mViewDetailsButton = (AppCompatButton) view.findViewById(R.id.view_details);
+            mCepView = view.findViewById(R.id.cep);
+            mLogradouroView = view.findViewById(R.id.logradouro);
+            mNumResidView = view.findViewById(R.id.numResid);
+            mTelefoneView = view.findViewById(R.id.telefone);
+            mHorarioFuncView = view.findViewById(R.id.horarioFunc);
+
         }
         @Override
         public String toString() {

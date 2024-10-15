@@ -5,11 +5,11 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
-a
+
     <LinearLayout
         android:id="@+id/collection_point_1"
         android:layout_width="338dp"
-        android:layout_height="82dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -23,52 +23,83 @@ a
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkbox_container">
 
-        <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imagem_perfil"
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:src="@drawable/local" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
+
+        <!-- Bairro e nome já existentes -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bairro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="40dp">
+            android:text="@string/neighborhood"
+            android:textColor="#666"
+            android:textSize="14sp" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imagem_perfil"
-                android:layout_width="53dp"
-                android:layout_height="55dp"
-                android:src="@drawable/local" />
-        </androidx.cardview.widget.CardView>
-
-
-        <LinearLayout
-            android:layout_width="0dp"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nome"
+            android:layout_width="219dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingLeft="8dp">
+            android:text="@string/point_of_collection"
+            android:textColor="#000"
+            android:textSize="16sp" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/bairro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/neighborhood"
-                android:textColor="#666"
-                android:textSize="14sp" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/nome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/point_of_collection"
-                android:textColor="#000"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/view_details"
+        <!-- Novos TextView -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:text="@string/view_details"
-            android:textColor="#1E91ED"
-            android:textSize="13sp"
-            app:iconTint="#20F7FAF7" />
+            android:text="CEP"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/logradouro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logradouro"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/numResid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/horarioFunc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horário de Funcionamento"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone"
+            android:textColor="#000"
+            android:textSize="14sp" />
     </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
